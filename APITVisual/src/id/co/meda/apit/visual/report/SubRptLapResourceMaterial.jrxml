@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SubRptLapResourceMaterial" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8338ac0b-1ef0-46f6-938c-d5417f151b6a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="hrgDhkm" class="java.lang.Double">
+		<fieldDescription><![CDATA[hrgDhkm]]></fieldDescription>
+	</field>
+	<field name="nmDhkm" class="java.lang.String">
+		<fieldDescription><![CDATA[nmDhkm]]></fieldDescription>
+	</field>
+	<field name="satDhkm" class="java.lang.String">
+		<fieldDescription><![CDATA[satDhkm]]></fieldDescription>
+	</field>
+	<field name="hrgDhkmStr" class="java.lang.String">
+		<fieldDescription><![CDATA[hrgDhkmStr]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="171" height="20" forecolor="#000000" backcolor="#000000" uuid="bcd7994a-8fff-4200-b71d-f7002fef7c61"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nmDhkm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="171" y="0" width="121" height="20" forecolor="#000000" backcolor="#000000" uuid="a2cb18cb-a396-4c72-adc7-16d1e36ffa50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{satDhkm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="1" width="209" height="20" uuid="baad7e3c-096e-49ea-964e-166c8a0279d8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hrgDhkmStr}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapTanahBandara" pageWidth="595" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4200324d-8445-4d6c-aa97-d912c19f4c83">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="NJOPBandara" class="java.lang.String">
+		<fieldDescription><![CDATA[NJOPBandara]]></fieldDescription>
+	</field>
+	<field name="NJOPBngKhusus" class="java.lang.String">
+		<fieldDescription><![CDATA[NJOPBngKhusus]]></fieldDescription>
+	</field>
+	<field name="NJOPBngPTDbkb" class="java.lang.String">
+		<fieldDescription><![CDATA[NJOPBngPTDbkb]]></fieldDescription>
+	</field>
+	<field name="NJOPBngPTNilPerM" class="java.lang.String">
+		<fieldDescription><![CDATA[NJOPBngPTNilPerM]]></fieldDescription>
+	</field>
+	<field name="NJOPTanah" class="java.lang.String">
+		<fieldDescription><![CDATA[NJOPTanah]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="155" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="151" backcolor="#FDF6C5" uuid="9250af43-5311-4f22-badd-8a4d5fd19bcc"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="10" width="263" height="20" uuid="4a87c677-4990-475b-a068-4876f4790b69"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[NJOP Tanah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="30" width="263" height="20" uuid="d988f51a-878d-4583-a6e9-bd89c1be722e"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[NJOP Bangunan Khusus]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="50" width="263" height="20" uuid="a6b4c9b2-c556-48db-911c-827a50b8620d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[NJOP Bangunan Pendukung dan Teknis DBKB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="70" width="263" height="20" uuid="0f0acfaa-a66b-40ad-90a6-d42412b95e85"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[NJOP Bangunan Pendukung dan Teknis Nilai Per-M2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="103" width="549" height="1" uuid="839849f6-2500-4520-a98f-8be3fa57d0f9"/>
+			</line>
+			<staticText>
+				<reportElement x="11" y="118" width="263" height="20" uuid="46177187-a8c4-4bc2-ab4e-fb80eef646e4"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[NJOP Bandara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="118" width="20" height="20" uuid="003fa5f0-938b-4720-b655-ce366779e11c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="10" width="20" height="20" uuid="7451d160-435b-4f06-94c7-033ae4e34b81"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="70" width="20" height="20" uuid="37585c11-a405-414b-855e-1d0e737018ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="30" width="20" height="20" uuid="463dd4ae-4eab-4b29-8aef-6d5c8104492d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="50" width="20" height="20" uuid="7c427f5b-2807-47df-be4e-0f018f6c4e8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="294" y="10" width="266" height="20" uuid="0460ec5c-f187-48bf-a9c0-e369da356ffa"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NJOPTanah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="30" width="266" height="20" uuid="db6129c1-add6-41f2-92e3-926ceedbac35"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NJOPBngKhusus}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="50" width="266" height="20" uuid="29ca78dd-7e51-4900-8b3a-698103eeeb81"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NJOPBngPTDbkb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="70" width="266" height="20" uuid="423666a7-80db-46bb-9baa-9c298e2d6557"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NJOPBngPTNilPerM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="118" width="266" height="20" uuid="ce557b46-f69a-4310-9cc8-280e01c629e9"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NJOPBandara}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

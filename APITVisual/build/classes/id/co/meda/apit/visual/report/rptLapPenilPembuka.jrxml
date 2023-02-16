@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Penilaian" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3e9d50a7-ee6f-4cca-bac7-d875101a81a3">
+	<property name="ireport.zoom" value="1.0000000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6384"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id\\co\\meda\\apit\\visual\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="datMaterial" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[datMaterial]]></fieldDescription>
+	</field>
+	<field name="kantorPenilai" class="java.lang.String">
+		<fieldDescription><![CDATA[kantorPenilai]]></fieldDescription>
+	</field>
+	<field name="kotaPenilai" class="java.lang.String">
+		<fieldDescription><![CDATA[kotaPenilai]]></fieldDescription>
+	</field>
+	<field name="lspopNonStandar" class="id.co.meda.apit.enggine.penilaian.model.LspopNonStandar">
+		<fieldDescription><![CDATA[lspopNonStandar]]></fieldDescription>
+	</field>
+	<field name="nilaiBng" class="id.co.meda.apit.enggine.penilaian.model.NilaiBangunan">
+		<fieldDescription><![CDATA[nilaiBng]]></fieldDescription>
+	</field>
+	<field name="spop" class="id.co.meda.apit.enggine.penilaian.model.Spop">
+		<fieldDescription><![CDATA[spop]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="280" height="37" uuid="287cbb69-e8e9-4d75-8841-b8376ebca8b1"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Footlight MT Light" size="27" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENILAIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="37" width="280" height="23" uuid="e88c3d10-b4ea-474e-bd2d-dda7cff9d895"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="17" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Objek Pajak Bumi dan Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="78" width="280" height="37" forecolor="#FF3333" backcolor="#000000" uuid="0be595fd-695f-4631-a84d-e76745a90f4c"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="22" isBold="true"/>
+					<paragraph firstLineIndent="5"/>
+				</textElement>
+				<text><![CDATA[PT MAKRO INDONESIA]]></text>
+			</staticText>
+			<frame>
+				<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="0" y="127" width="555" height="66" forecolor="#CC0000" uuid="967333e5-681d-4dcc-9192-f2942784dbe7"/>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="10" width="555" height="43" forecolor="#FF0000" uuid="39cc36cc-bd09-46ca-9375-62802c49cf4d"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Footlight MT Light" size="17" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Jl. Sultan Alauddin 95, Kelurahan Pa’baeng-baeng, Kecamatan Tamalate, Kotamadya Makassar, Provinsi Sulawesi Selatan]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="208" width="555" height="20" uuid="46ffe7a4-4822-4c38-b49d-b329939c0fae"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="16"/>
+				</textElement>
+				<text><![CDATA[NOP :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="325" y="683" width="230" height="70" forecolor="#FF0000" uuid="e715d8c9-2ebc-4bac-b73c-9af769719fd8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH KOTA MAKASSAR
+DINAS PENDAPATAN DAERAH
+UPTD PAJAK BUMI DAN BANGUNAN
+
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="781" width="555" height="1" uuid="29bf7b4b-1e5e-4977-8e89-9e0f0d5759b7"/>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="458" y="761" width="97" height="21" forecolor="#FF0000" uuid="e40bad4a-f986-4b02-95e2-56f01934ea22"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Footlight MT Light" size="17" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Januari 2015]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="555" height="789" uuid="6263fc82-e875-4040-948c-47f43f8b3e1c"/>
+				<line>
+					<reportElement x="0" y="13" width="555" height="1" uuid="ece1780a-58e1-44fe-8fef-f8fab64afe0f"/>
+					<graphicElement>
+						<pen lineWidth="5.0"/>
+					</graphicElement>
+				</line>
+				<staticText>
+					<reportElement x="0" y="28" width="204" height="26" uuid="81e9c975-8234-4757-acb6-a5490357d4cd"/>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="Footlight MT Light" size="24" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Laporan Penilaian]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="54" width="470" height="1" uuid="58608aa2-1694-4ffa-be35-88b0a6eff4c7"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="84" width="280" height="23" uuid="fef86cb7-a669-4f3b-a828-273b7f6be7ef"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Footlight MT Light" size="20" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Objek Pajak Bumi dan Bangunan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="122" width="280" height="35" forecolor="#FF0000" uuid="24433f74-3bd8-4dbd-b8d9-34cb98bb309c"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[PT MAKRO INDONESIA]]></text>
+				</staticText>
+				<frame>
+					<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" mode="Transparent" x="0" y="157" width="555" height="66" forecolor="#CC0000" uuid="f64d38e2-a106-44b4-8e35-d5e410a07668"/>
+					<staticText>
+						<reportElement stretchType="RelativeToTallestObject" x="0" y="10" width="555" height="43" forecolor="#FF0000" uuid="7928aea9-e1de-418b-8f61-f5b3008f1dfa"/>
+						<textElement verticalAlignment="Top">
+							<font fontName="Footlight MT Light" size="17" isBold="false"/>
+						</textElement>
+						<text><![CDATA[Jl. Sultan Alauddin 95, Kelurahan Pa’baeng-baeng, Kecamatan Tamalate, Kotamadya Makassar, Provinsi Sulawesi Selatan]]></text>
+					</staticText>
+				</frame>
+				<staticText>
+					<reportElement x="0" y="234" width="555" height="20" forecolor="#FF3333" uuid="4a403212-368d-4124-b330-7f0c526224ad"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="16"/>
+					</textElement>
+					<text><![CDATA[NOP :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="269" width="555" height="20" forecolor="#000000" uuid="6c7021fd-061a-486f-8b1e-e97d4206d81c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="16"/>
+					</textElement>
+					<text><![CDATA[Jenis Penggunaan Bangunan (JPB) ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="300" width="555" height="20" forecolor="#FF0033" uuid="460c2c7b-9f27-402f-9968-a8c9f81bd661"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="16"/>
+					</textElement>
+					<text><![CDATA[JPB-02 Perkantoran]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="293" y="660" width="262" height="70" forecolor="#FF0000" uuid="b8c22513-7379-4c69-8e7f-0c43c4372207"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="17" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PEMERINTAH KOTA MAKASSAR
+DINAS PENDAPATAN DAERAH
+UPTD PAJAK BUMI DAN BANGUNAN
+
+]]></text>
+				</staticText>
+				<line>
+					<reportElement x="0" y="769" width="555" height="1" uuid="fd415b94-d2af-4421-b454-41767222a113"/>
+				</line>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="458" y="744" width="97" height="21" forecolor="#FF0000" uuid="c204aeaa-e510-4d94-b32d-60f7735b764d"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Footlight MT Light" size="17" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Januari 2015]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="802">
+			<frame>
+				<reportElement x="0" y="0" width="555" height="419" uuid="4763556c-6a3c-41b6-a890-7bbd24ba4a62"/>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="328" y="0" width="227" height="55" forecolor="#000000" uuid="4fdef99c-7a45-43b4-a26c-b9f41736f129"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PEMERINTAH KOTA MAKASSAR
+DINAS PENDAPATAN DAERAH
+UPTD PAJAK BUMI DAN BANGUNAN
+
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="458" y="55" width="97" height="21" forecolor="#000000" uuid="9ffcdee8-5571-413a-ba59-dad94099af53"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font fontName="Footlight MT Light" size="17" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Januari 2015]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="0" y="96" width="555" height="23" uuid="6b9184a2-16c3-47f5-b7fa-6a3c8aef0740"/>
+				</rectangle>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="221" y="98" width="97" height="21" forecolor="#000000" uuid="f1274978-7b7f-461a-94ea-b560bef46c34"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="15" isBold="true"/>
+					</textElement>
+					<text><![CDATA[DAFTAR ISI]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="125" width="263" height="20" uuid="5b6c21e8-7b31-4fb5-bda5-eafc534ace8d"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Sertifikasi Nilai]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="145" width="263" height="20" uuid="b6cb2d33-68b1-431c-95d2-adadc8846a09"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Ringkasan Laporan Nilai]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="165" width="263" height="20" uuid="7c96e30d-5dc2-4193-9393-140ee42fc27f"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Pernyataan Asumsi dan Syarat yang Membatasi]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="185" width="263" height="20" uuid="9b883a0f-9bd2-4d8e-a878-5dbaaf496ae2"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Tujuan Penilaian]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="225" width="263" height="20" uuid="e7e44883-513f-4e86-8148-8d9971e8a8c0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Definisi]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="245" width="263" height="20" uuid="a640b86f-f90f-4906-8ce6-33e6d1c0db7f"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Data Wilayah dan Lingkungan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="265" width="263" height="20" uuid="5cc62113-4fbf-4120-a89c-c58160db3ca0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Data Properti]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="285" width="263" height="20" uuid="726b744b-4012-499b-b883-b401cb1ddc8f"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Metode Penilaian]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="30" y="345" width="263" height="20" uuid="cc7168f9-393c-4287-923b-3a3782b1ff84"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Lembar Pengesahan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="125" width="30" height="20" uuid="3c000609-d09b-419e-87cf-eaa1199f0a75"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[1.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="-315" y="-188" width="30" height="20" uuid="dfc37553-8ba3-4898-b7ff-ab5000f80a17"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[1.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="-315" y="-188" width="30" height="20" uuid="bc1bf0aa-494b-454c-b20c-e6027f3ac1db"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[1.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="145" width="30" height="20" uuid="78563eef-d3d1-4858-8ce8-eb74488a1dd8"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[2.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="165" width="30" height="20" uuid="753537fe-9e0a-49dd-a0d8-2fa836ea06f1"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[3.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="185" width="30" height="20" uuid="3f2ac8da-31e8-42ac-92d7-ecb7aa2a3b4e"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[4.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="205" width="30" height="20" uuid="7700fe08-af74-4e8d-b5a3-812338cbee33"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[5.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="225" width="30" height="20" uuid="67b0ffb3-6b37-4bc2-ad8f-5e274ec942b7"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[6.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="245" width="30" height="20" uuid="c782c160-94c8-47f5-be65-343a58b8dde0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[7.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="265" width="30" height="20" uuid="6e4836a2-b6e3-4eae-8ff5-c759fde51d21"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[8.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="285" width="30" height="20" uuid="aed36c80-b4ab-400f-8caf-7b5b75b827f4"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[9.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="305" width="30" height="20" uuid="24ae7c72-386a-4571-90e1-d988ed2189c9"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[10.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="325" width="30" height="20" uuid="7ad5ccd4-4a30-4ba7-965a-568d6913eba4"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[11.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="345" width="30" height="20" uuid="4767f7e8-4e92-4c3d-a7a3-d448dcc87095"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[12.0.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="375" width="293" height="20" uuid="033fe26c-62a2-4531-90f0-8785fed723a6"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Lampiran :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="395" width="293" height="20" uuid="9d0d6f74-cc60-4e0e-8345-32ae3c0c5a7a"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Footlight MT Light" size="13"/>
+					</textElement>
+					<text><![CDATA[Rincian Perhitungan]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="30" y="205" width="263" height="20" uuid="ad41a848-b4e7-47e9-86f5-e262c00cec2c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pemeriksaan dan Tanggal Penilaian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="305" width="263" height="20" uuid="b4fc58bb-5047-4e7d-9f95-436b4722c4dd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Penilaian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="325" width="263" height="20" uuid="d7365d8a-f32d-4bf5-90e6-a9e1094cf92b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Simpulan Penilaian]]></text>
+			</staticText>
+		</band>
+		<band height="336">
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="90bcc0c3-75ec-47aa-a725-5586828a7833"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="2" width="227" height="27" forecolor="#000000" uuid="40ead8d0-05df-43b6-84b6-19125c380efd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. SERTIFIKASI NILAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="555" height="20" uuid="d4c289ba-df3f-44b7-9bd4-bc2f041125a0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Kami menyatakan bahwa nilai yang dihasilkan adalah :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="63" width="555" height="20" uuid="199d530a-f3cc-4e3f-b14a-2454b67af9dd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[1. Berdasarkan pengetahuan kami dan berdasarkan data yang kami percayai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="83" width="555" height="35" uuid="107c0d79-3c5d-4f2a-b94a-2bfa788fdb38"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[2. Berdasarkan  pernyataan  atas  fakta  yang  dinyatakan  dalam  laporan  ini  dan  fakta  tersebut
+    adalah benar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="118" width="555" height="35" uuid="38ae03f4-3651-4b95-86b1-a7acb8532783"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[3. Berdasarkan atas analisis, opini dan kesimpulan yang dibatasi oleh asumsi dan syarat yang
+membatasi  dan  hal  ini  merupakan  hasil  analisis,  opini  dan kesimpulan  professional penilai;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="153" width="555" height="46" uuid="7ccbad14-c1e5-4768-914b-6a70f81f4b9f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[4. Berdasarkan  pada  kondisi  bahwa  kami  tidak  memiliki  kepentingan  khusus  atau  pribadi
+    baik sekarang maupun masa yang akan datang atas subjek dan atau objek penilaian yang
+    dinilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="199" width="555" height="46" uuid="18755f78-6021-4667-8ebe-3caab3d4b9ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[5. Berdasarkan  pada  kondisi  bahwa  kami  tidak  memiliki  kepentingan  khusus  atau  pribadi
+    baik sekarang maupun masa yang akan datang atas subjek dan atau objek penilaian yang
+    dinilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="245" width="555" height="46" uuid="5e260ce1-5873-43d1-8d61-0d8dae4136ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[6. Berdasarkan pada peninjauan langsung terhadap property yang dinilai dalam laporan ini.]]></text>
+			</staticText>
+		</band>
+		<band height="802"/>
+		<band height="802">
+			<line>
+				<reportElement x="0" y="27" width="555" height="1" uuid="fb0fd1c5-a555-4a67-8f27-740f222b26d0"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="280" height="27" forecolor="#000000" uuid="e822717f-c815-4b07-848f-7cb5857119cb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. RINGKASAN LAPORAN NILAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="46" width="143" height="25" uuid="daa4d82d-697c-4d97-8037-384ff0fc7eb5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Nama Objek Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="71" width="143" height="25" uuid="05af2ec5-5b2b-44d5-a93a-5fd15a61450a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Alamat Objek Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="96" width="143" height="25" uuid="d9e104a4-1e6d-4b81-82a7-0d17fb7e2bd8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Subjek Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="121" width="143" height="25" uuid="c6efb38e-1dad-4d10-8993-14d9fc87859f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Gambaran Umum Aset]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="146" width="143" height="25" uuid="ae73260f-1177-4f66-ba7e-4d874f0746f0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Luas Tanah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="171" width="143" height="25" uuid="f7bc7aec-db38-4bbc-8c76-2c6a975f037a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Luas Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="196" width="143" height="25" uuid="d9551c87-75b3-42ce-b037-cd8aea06e519"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Jenis Hak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="46" width="39" height="25" uuid="d333266b-f36b-455d-a57a-ae9fbec4da0f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="71" width="39" height="25" uuid="3df451e6-48ce-4785-a0af-d0821a311f3e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="96" width="39" height="25" uuid="9c67736c-5383-485d-aec3-b00a697e97ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="121" width="39" height="25" uuid="08d901da-747a-4b26-be92-8700e3fc2d6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="146" width="39" height="25" uuid="45fa9831-9535-4f73-ab52-4d9ba76828f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="171" width="39" height="25" uuid="7258971b-4aac-489a-a204-c984292c5183"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="196" width="39" height="25" uuid="10107908-d473-4c51-9f25-e456ffceeacd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<line>
+				<reportElement x="0" y="27" width="555" height="1" uuid="817e133a-81d9-49c5-9d27-2162c741945e"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="527" height="27" forecolor="#000000" uuid="7125d977-5b82-4002-aa29-f469cd9e6b5a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. PERNYATAAN, ASUMSI DAN SYARAT YANG MEMBATASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="28" width="555" height="40" uuid="ef9d0c0c-ebcc-44b3-b8f8-f41c6ddbfca2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Penilai menyatakan dan membuat asumsi sebagai berikut :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="555" height="51" uuid="83840f9b-1549-4f34-b93a-e4f6bc503c53"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[1. Penilaian    dilakukan    berdasarkan    data    dan    informasi    yang    disampaikan    oleh
+     pemilik/pengelola asset dan atas ketidakbenaran data dan informasi yang diberikan bukan
+     menjadi tanggung jawab penilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="119" width="555" height="40" uuid="1f05f0e9-27d9-4e2c-aad8-7ab6664ea114"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[2. Subjek   yang   dinilai   sebagai   subjek   yang   bebas   dari   segala   beban   atasnya,   kecuali
+    dinyatakan lain]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="159" width="555" height="40" uuid="cd710e68-1683-410c-a9dc-28ed564aafff"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[3. Kompetensi  kepemilikan  dan  manajemen  subjek  penilaian  merupakan  tanggung  jawab
+    pemilik/pengelola asset]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="199" width="555" height="40" uuid="fd1909d2-38ce-473e-a245-d91df444d098"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[4. Keterangan  yang  diberikan  oleh pihak  lain dianggap  layak  selama  berdasarkan  analisis
+    subyektif yang dilakukan penilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="239" width="555" height="50" uuid="957e1d8d-9441-432e-81fd-2c8822a5a189"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[5. Seluruh rancang bangun diasumsikan benar. Gambar tapak dan gambaran material dalam
+     laporan  ini  dimaksudkan  hanya untuk  membantu  pembaca  dalam  memvisualisasi  subjek
+     yang dinilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="289" width="555" height="58" uuid="30d30835-d142-4734-bfcd-56f8fd2d9790"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[6. Diasumsikan  bahwa  tidak  satupun  hal  yang  berkaitan  dengan  subjek  penilaian  ini  yang
+    disembunyikan sehingga mengakibatkan bertambah atau berkurangnya nilai. Penilai tidak
+    bertanggung   jawab   atas   rekayasa   yang   memungkinkan   hal-hal   yang   ditutupi oleh
+    pemilik/pengelola asset]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="347" width="555" height="44" uuid="731753ee-a301-4d5f-b7dd-45177069c9c3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[7. Diasumsikan  bahwa  penilaian  telah  dilaksanakan  dengan  mempertimbangkan  seluruh
+    batasan  dan  peraturan  pemerintah  yang  berlaku  dan  melekat  atas  subjek  penilaian,
+    kecuali dinyatakan lain]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="391" width="555" height="41" uuid="29959e95-0d24-40e0-b1d5-3ce479445318"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[8. Diasumsikan bahwa peraturan mengenai peruntukan dan tata ruang atas subjek penilaian
+    telah dipenuhi dan bila ada pengecualian telah dinyatakan dalam laporan ini]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="432" width="555" height="50" uuid="a4fc49d8-d5bf-4479-8f60-b66d438ba741"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[9. Diasumsikan  bahwa  penggunaan  tanah  dan  bangunan  serta  saran  pelengkapnya  dalam
+    area subjek penilaian yang dinilai telah dirinci dalam laporan ini dan tidak ada beban atau
+    kewajiban, kecuali dinyatakan lain]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="482" width="555" height="40" uuid="e10359d4-7c40-4bbd-88af-a869a4792af1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Laporan penilaian ini dibuat dengan syarat batasan umum sebagai berikut :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="522" width="555" height="60" uuid="cb975971-0e3f-4475-b1f5-3584dee7516e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[1. Setiap  alokasi  dari  total  nilai  yang  diestimasikan  dalam  laporan  ini  antara  tanah  dan
+    bangunan, berlaku hanya bagi rencana penggunaan yang dinyatakan. Nilai yang terpisah
+    dialokasikan  atas  tanah  dan  bangunan  tidak  boleh  digunakan  dalam  hubungannnya
+    dengan penilaiaan lain dan dinyatakan invalid apabila digunakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="582" width="555" height="39" forecolor="#FF0000" uuid="2705e01e-232b-4c77-9819-3202d0af35fd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[2. Laporan ini bersifat rahasia dan tidak dapat disebarluaskan secara umum tanpa izin dari
+    pihak  pemberi  tugas cq.  UPTD  Pajak  Bumi  dan  Bangunan,  Dinas  Pendapatan  Kota Makassar;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="621" width="555" height="49" uuid="f72b5542-6ef5-469c-b231-616b292b6b06"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[3. Penilai tidaklah diwajibkan untuk memberi kesaksian atau hadir di depan pengadilan atau
+     instansi lainnya yang berhubungan dengan asset yang dinilai, kecuali telah ada perjanjian
+    sebelumnya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="670" width="555" height="62" forecolor="#FF0000" uuid="d9ca1361-f096-4cc0-a815-5222dea90e81"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[4. Baik  seluruhnya  maupun  sebagian  dari  laporan  ini,  (khususnya  kesimpulan  nilai  dan
+    identitas penilai) tidak boleh disebarluaskan untuk umum melaluli iklan, berita, penjualan
+    atau  media  lainnya tanpa  persetujuan  terlebih  dahulu  dari  penilai  dan  pihak  pemberi
+    tugas cq. UPTD Pajak Bumi dan Bangunan, Dinas Pendapatan Kota Makassar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="732" width="555" height="59" uuid="2f3761c3-293b-41c0-8602-88f2ed3c7f8b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[5. Penilaian didasarkan pada kondisi tanggal penilaian berdasarkan data dan informasi, baik
+    grafis  maupun  non  grafis,  formulir  bangunan  dan  data  data  lain  yang  diberikan  oleh    pemilik/pengelola asset serta pengalaman dan pengamatan penilai]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="59" uuid="4869c732-14b2-44eb-a278-cbe894af1621"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[6. Penilaian   ini   hanya   ditujukan   untuk   tujuan   sebagaimana   disebutkan   dalam   tujuan
+    penilaian dalam laporan ini serta menjadi satu kesatuan yang tidak dapat dipisahkan, dan
+    penilai tidak bertanggung jawab terhadap penggunaan untuk tujuan penilaian lainnya;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="59" width="555" height="38" uuid="875e087a-be92-4464-87a8-9aa319cd9159"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[7. Penentuan nilai dilakukan terhadap bangunan sesuai dengan tujuan penilaian, sedangkan
+    untuk mesin tidak dilakukan perhitungan nilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="97" width="555" height="29" uuid="4dbedb54-f1fd-44a3-a515-648215d3b081"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[8. Tugas dan tanggung jawab penilai hanya sebatas mendata dan menilai objek dimaksud.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="140" width="527" height="27" forecolor="#000000" uuid="633f7b61-8f5e-4755-ad53-97517de894a7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. TUJUAN PENILAIAN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="167" width="555" height="1" uuid="281e49c8-1fe5-4d6d-978d-88c87476f6c6"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="168" width="555" height="68" forecolor="#CC0000" uuid="6625a1d1-a11b-422a-92f7-cbdb5f0dbded"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Untuk  menentukan  nilai  jual  objek  pajak  (NJOP)  sebagai  dasar  pengenaan  PBB  tahun
+pajak 2015, sebagaimana dinyatakan dalam pasal 64 ayat 1 Peraturan Daerah Kota Makassar Nomor
+3   tahun   2010   tentang   Pajak   Daerah   Kota   Makassar   sebgaimana   telah   diubah   dengan
+Peraturan Daerah Kota Makassar Nomor 2 Tahun 2012.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="239" width="527" height="27" forecolor="#000000" uuid="352ad058-a4c7-4a60-b6d7-9dd04d91e0b5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. TANGGAL PEMERIKSAAN DAN TANGGAL PENILAIAN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="266" width="555" height="1" uuid="fa4c5b53-cbbd-481c-a995-601ff8a333d3"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="267" width="555" height="100" forecolor="#CC0000" uuid="3ea829ac-3e5a-4e06-9f7d-90fbfca231db"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Pemeriksaan  dan  peninjauan  lapangan  dilakukan  pada  tanggal  1  Oktober  s.d.  23  Desember
+2014.  Tanggal  penilaian  didasarkan  pada  kondisi  objek  pajak  per  1  januari 2015  sesuai dengan pasal 67 ayat 2 Peraturan Daerah Kota Makassar Nomor 3 tahun 2010 tentang Pajak
+Daerah  Kota  Makassar  Sebagaimana  telah  diubah  dengan  Peraturan  Daerah  Kota  Makassar Nomor 2 tahun 2012, dengan asumsi tidak ada perubahan sampai pada tangga
+l pemeriksaan dilapangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="400" width="527" height="27" forecolor="#000000" uuid="7794a947-c707-40ae-8ad9-97b0c290aa7b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. DEFINISI DAN PENGERTIAN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="427" width="555" height="1" uuid="763c979b-9e75-4d3a-af91-63bdfca70c13"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="434" width="555" height="14" forecolor="#000000" uuid="e5823620-a8fe-4680-b5fd-5c60a5288599"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.1 Harga (Price)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="449" width="535" height="49" forecolor="#000000" uuid="5fda04f8-8fa5-4206-8f5b-d835014258d9"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Harga  adalah  Sejumlah  uang  yang  diminta,  ditawarkan,  atau  dibayarkan  untuk  suatu  Aset.
+Karena  Kemampuan  Keuangan,  Motivasi,  atau  kepentingan  khusus  dari  pembeli  atau  penjual,
+harga yang dibayarkan mungkin berbeda dengan nilai dari asset tersebut berdasarkan anggapan
+pihak lain. (SPI 2013 Konsep dan Prinsip Umum Penilaian Butir 4.2).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="517" width="535" height="101" forecolor="#000000" uuid="cdd97853-2dd9-4cce-a787-b9f3f648e050"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Nilai adalah  suatu  opini  dari  manfaat  ekonomi  atas  kepemilikan  asset,  atau  harga  yang  paling mungkin  dibayarkan  untuk  suatu  asset  dalam  pertukaran,  sehingga  nilai  bukan  merupakan suatu fakta. Asset diartikan juga sebagai barang dan jasa. Nilai  dalam  pertukaran  adalah suatu harga hipotesis, dimana hipotesis dari  nilai diestimasi dan ditentukan  oleh  tujuan  penilaian  pada  waktu  tertentu.  Nilai  bagi  pemilik  adalah suatu  estimasi manfaat  yang  akan  diperoleh  pihak  tertentu  atas  suatu  kepemilikan  (SPI 2013Konsep  dan Prinsip Umum Penilaian Butir 4.4)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="502" width="555" height="14" forecolor="#000000" uuid="3617f5f4-6b48-4b01-ad80-e7a05da1a0f1"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.2 Nilai (Value)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="618" width="555" height="14" forecolor="#000000" uuid="ba12f3fb-d056-4cee-945e-5716420732a3"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.3 Biaya (Cost)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="634" width="535" height="51" forecolor="#000000" uuid="2bd82bae-4571-4c71-bbee-7f9fc43e4c43"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Biaya adalah sejumlah uang yang diperlukan untuk memperoleh atau menciptakan suatu asset.
+Ketika asset telah diperoleh atau diciptakan, biaya merupakan suatu fakta. Harga berhubungan
+dengan biaya, karena harga dibayar untuk suatu asset menjadi biaya bagi pembeli. (SPI 2013
+Konsep dan Prinsip Umum Penilaian Butir 4.4). ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="689" width="555" height="14" forecolor="#000000" uuid="55bd30c6-d5d7-4e48-b4ab-df60e3038ec0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.4 Nilai Pasar(Market Value)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="705" width="535" height="70" forecolor="#000000" uuid="fe13d14d-bebd-4394-bb6e-a1ee96b494ee"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Nilai pasar adalah perkiraan jumlah uang pada tanggal penilaian yang dapat diperoleh dari
+transaksi jual beli atau hasil penukaran suatu bagian asset (tidak termasuk tanah), antara
+pembeli yang berniat membeli dan penjual yang berminat menjual, dalam suatu transaksi bebas
+ikatan, yang pemasarannya dilakukan secara layak, dimana kedua pihak masing bertindak atas
+dasar pemahaman yang dimilikinya, kehati hatian tanpa paksaan (SPI 2013 101-3.1).]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="31" forecolor="#000000" uuid="639c22a1-7543-47e2-a94e-4b42571d8f4f"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6.5 Estimasi biaya dari property didasarkan pada estimisasi biaya reproduksi atau biaya penggantian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="31" width="535" height="41" forecolor="#000000" uuid="ee1f56c1-d039-4307-8f4d-d008a5e023de"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Biaya Reproduksi adalah biaya untuk menciptakan replica dari struktur yang ada, menerapkan
+desain dan material yang sama. Biaya penggantian mengestimasikan biaya yang diperlukan
+untuk  Nilai Pasar untuk penggunaan yang ada, nilai kena pajak, nilai jual objek pajak.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="124" width="555" height="1" uuid="5ce3d236-1090-45d7-9d7a-d742328e2b5a"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="97" width="527" height="27" forecolor="#000000" uuid="3e98d7e5-7d3c-480a-b4db-260c8a46ef50"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7. DATA WILAYAH LINGKUNGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="555" height="71" forecolor="#CC0000" uuid="b0294592-f421-4b04-936a-e896ce9a1d4f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Lokasi PT. Makro Indonesia terletak di Jl. Sultan Alauddin 95, Kelurahan Pa’baeng-baeng,
+Kecamatan Tamalate, Kotamadya Makassar, Provinsi Sulawesi Selatan. Objek Pajak ini berada
+pada kawasan komersil dan mempunyai akses melalu jalan Sultan Alauddin, A.P. Pettarani,
+serta dilalui oleh kendaraan umum untuk menuju kelokasi objek]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="215" width="527" height="27" forecolor="#000000" uuid="585fb3b7-4c2d-41d3-ac4c-91e5cb29f27e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8. DATA PROPERTI]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="242" width="555" height="1" uuid="192e3b4c-9028-48ec-803f-48cdcacd2fbf"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="258" width="555" height="14" forecolor="#000000" uuid="fb497e8f-c267-434c-8055-0a0c5bd1d47d"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.1. Peruntukan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="274" width="535" height="53" forecolor="#000000" uuid="ce139c8d-577c-49cf-9781-d3e5c087b2a2"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Peruntukan tanah (Zoning) dari objek pajak adalah kawasan komersil, hal ini dapat dilihat dari
+property disekitar objek pajak yang berada dikawasan tersebut, kebijakan atas perubahan zoning
+dari pemerintah daerah setempat yang berpengaruh pada potensi nilai tanah, berdasarkan
+analisis tidak ditemukan pada waktu dekat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="347" width="535" height="89" forecolor="#000000" uuid="2939bf32-0350-4dd6-8c34-a0a2387b52ff"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Berdasarkan hasil pemeriksaan lapangan serta informasi yang disampaikan oleh wajib pajak,
+keluasan tanah objek pajak adalah 25,792 m2 dan bentuk tanah adalah beraturan dengan kontur
+tanah rata dan mempunyai elevasi lebih tinggi dari permukaan jalan. Fasilitas yang tersedia
+meliputi jaringan pipa air minum dari PAM, listrik, telepon, dan fasilitas lain pada umumnya.
+Dalam penilaian ini kami tidak melakukan pengukuran atas tanah yang dinilai, dan kami
+berasumsi bahwa sertifikat tanah dan dokumen-dokumen lainnya adalah sah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="331" width="555" height="14" forecolor="#000000" uuid="76c954c9-6e95-44c6-b8e7-c24ddf97aa71"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.2. Data Tanah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="455" width="535" height="44" forecolor="#000000" uuid="f5aa8328-3d47-40c7-b945-972d854f86a9"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Bangunan ini merupakan perkantoran dengan jumlah lantai 1 bangunan ini telah selesai
+dibangun ditahun 2002 dan dalam kondisi yang baik pada saat dilakukan peninjauan dan
+pemeriksaan dilapangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="441" width="555" height="14" forecolor="#000000" uuid="4bb8f97c-1245-418a-a2a7-67a31d4a2bf1"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.3. Data Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="526" width="555" height="14" forecolor="#000000" uuid="a9f3a755-2a6c-4650-9be2-45b8abedb637"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[a. Keterangan Data Komponen Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="588" width="555" height="14" forecolor="#000000" uuid="36ede0cf-0185-4f91-bc41-0b8c94b75d09"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[b. Keterangan Data Komponen Material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="652" width="555" height="14" forecolor="#000000" uuid="92191959-563e-4cf3-92b9-9129c24de261"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[c. Keterangan Data Komponen Fasilitas]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="540" width="555" height="37" uuid="1a49c6b3-2210-4e1f-9935-d51cc856bf12"/>
+				<subreport>
+					<reportElement x="2" y="0" width="551" height="25" uuid="2587d6eb-3493-4c87-9483-25de4b587b83"/>
+					<subreportParameter name="SUBREPORT_DIR"/>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapDataKompBangunan.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="2" y="602" width="553" height="34" uuid="90d42bc7-511a-40fa-af2a-199761fed43d"/>
+				<subreport>
+					<reportElement x="0" y="0" width="551" height="20" uuid="a137c144-9db1-4f53-89b8-c3673c218662"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{datMaterial})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapDataMaterialBng.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="802">
+			<line>
+				<reportElement x="0" y="30" width="555" height="1" uuid="a90fcd6a-1bd5-45f7-aa23-e8b9588e48bb"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="3" width="527" height="27" forecolor="#000000" uuid="6dbcf99d-9798-4482-aa4b-cda404a401a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9. METODE PENILAIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="555" height="14" forecolor="#000000" uuid="f67927e5-bb21-4002-914a-137505eee702"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9.1. PENILAIAN TANAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="56" width="525" height="55" forecolor="#000000" uuid="4f0b1823-aa86-4b17-9552-24d12de4c6a2"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Pendekatan Penilaian yang digunakan untuk menetukan NJOP tanah berdasarkan metode data
+pasar yaitu membandingkan secara langsung objek pajak yang akan dinilai dengan data
+transaksi pembanding yang telah dianalisa, dengan menggunakan factor factor penyesuaian
+(adjustment). ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="129" width="525" height="63" forecolor="#000000" uuid="efe9d1fd-bf00-4fc6-b872-f9f8fad3e8a6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Pendekatan penilaian yang digunakan untuk menetukan NJOP bangunan menggunakan
+pendekatan biaya yaitu dengan cara menghitung keseluruhan biaya yang dikeluarkan untuk
+memperoleh bangunan pada kondisi baru sesuai tanggal penilaian. Dikurangi dengan
+penyusutan yang terjadi pada bangunan sesuai hasil pengamatan langsung dari aspek
+penyusutan fisik, fungsi dan ekonomis. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="114" width="555" height="14" forecolor="#000000" uuid="f58b16c5-e0c3-4105-823a-372061f497bf"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9.2. PENILAIAN BANGUNAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="194" width="525" height="63" forecolor="#000000" uuid="b364a3bd-4524-4e1d-b974-bf723479b9d3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[a. Perhitungan Biaya Komponen Bangunan
+    Perhitungan biaya pembuatan baru bangunan berdasarkan Daftar Biaya Komponen
+    Bangunan (DBKB) yang berlaku diwilayah Kota Makassar. DBKB disusun berdasarkan harga
+    satuan per m2 yang dihitung dengan melibatkan semua biaya material, upah, jasa arsitek dan
+    PPN. Harga satuan per m2 dikalikan dengan luas bangunan. Hasil perkalian tersebut
+    merupakan biaya pembuatan baru dari bangunan objek pajak. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="260" width="525" height="90" forecolor="#000000" uuid="df82ad67-e6af-425e-82c0-e0a9afed98a0"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[b. Perhitungan Penyusutan
+    Perhitungan penyusutan bangunan terminal dan bangunan teknis didasarkan pada table
+    penyusutan dalam lampiran 29 Keputusan Direktur Jenderal Pajak Nomor : Kep
+    533/PJ.6/2000 tanggal 20 Desember 2000 tentang Petunjuk Pendaftaran, Pendataan dan
+    Penilaian objek dan Subjek Pajak Bumi dan Bangunan (PBB) dalam rangka pembentukan dan
+    atau Pemeliharaan Basis Data Sistem Manajemen Informasi Objek Pajak (SISMIOP)
+    sebagaimana telah diubah dengan KEP-115/PJ./2002, tanggal 4 Maret 2002. ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="393" width="555" height="1" uuid="3fcece2e-21a9-427f-9bae-d6007f8ddc15"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="366" width="527" height="27" forecolor="#000000" uuid="98216958-9c41-4594-aea5-fdc29bd50d61"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10. PENILAIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="421" width="525" height="27" forecolor="#000000" uuid="8f53d277-b0ee-4176-8b97-344a25797b89"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Berdasarkan analisa terhadap objek pajak yang dinilai dan data pembanding yang diperoleh,
+maka nilai objek pajak adalah sebagai berikut : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="404" width="555" height="14" forecolor="#000000" uuid="cdf6e485-d280-4754-948a-0d7b1f3b5456"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[10.1. PENILAIAN TANAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="481" width="555" height="14" forecolor="#000000" uuid="71f31d3a-8746-4d90-8960-fee24438d335"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[10.2. PENILAIAN BANGUNAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="498" width="525" height="15" forecolor="#000000" uuid="3b1d5f65-e884-46a6-9f3d-167a562c8cd2"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Perhitungan nilai bangunan setelah dikurangi penyusutan adalah sebagai berikut : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="537" width="555" height="14" forecolor="#000000" uuid="fc887538-c7e4-4d88-adcc-fa669fb71b7c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[10.3. KONVERSI NILAI OBJEK PAJAK Berdasarkan Per. Men. Keu. No : 150/PMK.03/2010]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="575" width="555" height="14" forecolor="#000000" uuid="d6eb7fae-4ec9-440e-a0d1-c8218dbffcf7"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[10.4. PERBANDINGAN NJOP]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<line>
+				<reportElement x="0" y="38" width="555" height="1" uuid="6b9aa418-d031-4346-9972-e1323d2e66cf"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="11" width="527" height="27" forecolor="#000000" uuid="3f752f85-1278-4a1a-91a5-390a7da13f91"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Footlight MT Light" size="17" isBold="true"/>
+				</textElement>
+				<text><![CDATA[11. SIMPULAN NILAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="54" width="525" height="138" forecolor="#000000" uuid="13d99ca9-06aa-4e83-b8a8-72e422dbda98"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="Footlight MT Light" size="13"/>
+				</textElement>
+				<text><![CDATA[Berdasarkan hasil analisis dan penilaian terhadap asset, dengan mempertimbangkan berbagai factor
+yang mempengaruhi nilai, kami menyimpulkan bahwa nilai jual objek pajak atas tanah dan bangunan P T . M a k r o I n d o n e s i a y a n g t e r l e t a k d i J l . S u l t a n A l a u d d i n 9 5 , K e l u r a h a n P a ’ b a e n g - baeng,
+K e c a m a t a n T a m a l a t e , K o t a m a d y a M a k a s s a r , P r o v i n s i S u l a w e s i S e l a t a n p e r 1 J a n u a r i 2 0 1 5 ,
+besarnya nilai jual objek pajak sebagai dasar pengenaan Pajak Bumi dan Bangunan adalah
+sebesar : ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

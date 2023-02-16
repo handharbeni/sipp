@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapResourceMaterial" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff1811a6-8a4f-4713-bfbc-0dceb92bfd14">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id/co/meda/apit/visual/report/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="arrDhkmf" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrDhkmf]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[tahun]]></fieldDescription>
+	</field>
+	<field name="dinasDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[dinasDaerah]]></fieldDescription>
+	</field>
+	<field name="namaPemDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[namaPemDaerah]]></fieldDescription>
+	</field>
+	<field name="alamatDinas" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatDinas]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="136" splitType="Stretch">
+			<textField>
+				<reportElement x="78" y="10" width="429" height="26" uuid="35d19141-5b55-434e-88c9-7269baa3ad46"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaPemDaerah}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="77" width="555" height="1" uuid="5b182837-c783-43b0-ac32-076ffc7ca209"/>
+			</line>
+			<textField>
+				<reportElement x="78" y="57" width="429" height="20" uuid="51090904-ceff-466b-b36b-11f2534f97e4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamatDinas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="37" width="430" height="20" uuid="d71ac9d0-c5c3-4839-822e-a960cb5f28ca"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dinasDaerah}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="2" y="10" width="55" height="66" uuid="aa4a0e5b-7590-4168-8fae-64a606de360b"/>
+				<imageExpression><![CDATA["id/co/meda/apit/visual/resource/Lambang_Kota_Batam.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="116" y="89" width="303" height="20" uuid="9f25db1e-eb86-4300-b123-43450a8687b2"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAFTAR HARGA KOMPONEN MATERIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="109" width="100" height="20" uuid="a776e105-79f0-4a1b-b009-9ec0ef72776b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="109" width="100" height="20" uuid="fc338c49-522b-4ff9-b702-51f37b02170c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="0" width="552" height="20" forecolor="#0099CC" backcolor="#0099CC" uuid="1e009174-6eb4-4cd6-a436-f1318da2e8b7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="-1" y="0" width="178" height="20" forecolor="#FFFFFF" uuid="3f6a1bff-3369-4778-b77a-e8141d401cb4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="0" width="121" height="20" forecolor="#FFFFFF" uuid="dfd64fa1-5dcf-4008-b043-5d1282627edb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="0" width="256" height="20" forecolor="#FFFFFF" uuid="72f6ef11-e9ff-4871-b60e-bbed8ec495d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Harga (Rp)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="-2" width="555" height="62" uuid="108dc0f0-1ea0-42c5-b123-5e21fa3845c6"/>
+				<subreport>
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="3" y="4" width="551" height="58" uuid="6cc627bf-7ac4-4fde-b863-fc8f85d7ec29"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{arrDhkmf})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "SubRptLapResourceMaterial.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

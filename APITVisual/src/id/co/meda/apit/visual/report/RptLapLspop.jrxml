@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RptLapLspop" language="groovy" pageWidth="595" pageHeight="845" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff81fe3b-744e-4902-9eb2-4f323919dc34">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id/co/meda/apit/visual/report/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="alamatDinas" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatDinas]]></fieldDescription>
+	</field>
+	<field name="arrLspop" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrLspop]]></fieldDescription>
+	</field>
+	<field name="dinasDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[dinasDaerah]]></fieldDescription>
+	</field>
+	<field name="namaPemDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[namaPemDaerah]]></fieldDescription>
+	</field>
+	<field name="nop" class="java.lang.String">
+		<fieldDescription><![CDATA[nop]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[tahun]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="168" splitType="Stretch">
+			<textField>
+				<reportElement x="77" y="4" width="429" height="26" uuid="b011b384-57b9-4672-9918-fec810aba4b7"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaPemDaerah}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="71" width="555" height="1" uuid="a2fac62a-859f-47f1-a881-b556cbee0091"/>
+			</line>
+			<textField>
+				<reportElement x="77" y="51" width="429" height="20" uuid="36596653-71f4-41d6-b302-3d9c7c21582f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamatDinas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="31" width="430" height="20" uuid="8afe2c5d-7bae-4140-a771-9ac49d36bce7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dinasDaerah}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1" y="4" width="55" height="66" uuid="a0e70c70-f9aa-4f00-8cf0-d79e9207c3c7"/>
+				<imageExpression><![CDATA["id/co/meda/apit/visual/resource/Lambang_Kota_Batam.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="131" y="88" width="303" height="20" uuid="cd25ce18-2be2-4620-9e7b-0e66504570d1"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lampiran Surat Pemberitahuan Objek Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="140" width="55" height="20" uuid="c2f326ad-256a-4609-b852-cf4cc833b81f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOP ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="140" width="30" height="20" uuid="9108840c-3432-44d3-b896-bf92048f17ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="86" y="140" width="375" height="20" uuid="695f106a-2351-476e-a29d-4f67cfc6f67e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nop}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="293" splitType="Stretch">
+			<frame>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="1" y="0" width="554" height="293" uuid="168fab39-10ef-4c2d-b619-a508cdca50eb"/>
+			</frame>
+			<subreport>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="3" y="2" width="550" height="210" uuid="3e832cda-c574-452f-b5fa-fa7022d8c493"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{arrLspop})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subRptLapLspop.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

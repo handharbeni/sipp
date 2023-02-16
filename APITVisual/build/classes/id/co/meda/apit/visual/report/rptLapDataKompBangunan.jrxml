@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eaaeb897-6bb4-4604-a62e-2226977913f9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\Programming\\Project\\APIT_Batam\\APITVisual\\src\\id\\co\\meda\\apit\\visual\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="102" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="30" width="555" height="38" forecolor="#000000" backcolor="#0099FF" uuid="458d510f-82a0-4cf1-925c-2e57267d5b24"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="15" uuid="1ccdfbd8-bea6-4b51-964c-28f4283372b3"/>
+				<textElement>
+					<font fontName="Footlight MT Light" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[a. Keterangan Data Komponen Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="32" height="38" forecolor="#FFFFFF" uuid="95d2a06f-f5a8-4925-9ec7-09ff6877d6d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="30" width="104" height="38" forecolor="#FFFFFF" uuid="1e35546b-0b67-4a5b-9901-bf1c58180974"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Nama Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="30" width="98" height="15" forecolor="#FFFFFF" uuid="7bf73dd8-2305-43d7-aadd-e49ca24c67f0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Luas (M2)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="43" width="45" height="25" forecolor="#FFFFFF" uuid="5fb43203-a22b-44e1-9cce-8411f180067f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Struktur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="43" width="53" height="25" forecolor="#FFFFFF" uuid="de77d049-0e7f-47e1-92ef-2a44a5a76cda"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Basement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="30" width="119" height="15" forecolor="#FFFFFF" uuid="ea0f91bd-9bd9-498e-b824-ba6d42243d76"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jumlah Lantai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="43" width="59" height="25" forecolor="#FFFFFF" uuid="1d8d5985-6fda-4c77-8039-d53529972083"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Basement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="43" width="60" height="25" forecolor="#FFFFFF" uuid="17228b94-5f44-43ce-b607-c3796b948f4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Struktur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="30" width="68" height="38" forecolor="#FFFFFF" uuid="ccb33d7e-5611-4c8b-bc34-4c59539c8334"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Konstruksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="30" width="76" height="38" forecolor="#FFFFFF" uuid="7f51e1b1-8fab-4838-9d23-d9348c91acab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Tahun Selesai Dibangun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="496" y="30" width="59" height="38" forecolor="#FFFFFF" uuid="9d31352a-c934-4496-b574-6a78e11921da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Kondisi]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="70" width="555" height="30" uuid="9e303aa6-c411-46fc-9a2a-909374e2844a"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="24" uuid="07274403-af67-4319-9821-7917bd2aa08b"/>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapDataKompBangunanItem.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>

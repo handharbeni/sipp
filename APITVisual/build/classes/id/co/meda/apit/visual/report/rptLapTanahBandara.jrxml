@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapTanahBandara" pageWidth="595" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4200324d-8445-4d6c-aa97-d912c19f4c83">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="jnsPenggunaanTanah" class="java.lang.String">
+		<fieldDescription><![CDATA[jnsPenggunaanTanah]]></fieldDescription>
+	</field>
+	<field name="luas" class="java.lang.String">
+		<fieldDescription><![CDATA[luas]]></fieldDescription>
+	</field>
+	<field name="nilPerM" class="java.lang.String">
+		<fieldDescription><![CDATA[nilPerM]]></fieldDescription>
+	</field>
+	<field name="nilTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[nilTotal]]></fieldDescription>
+	</field>
+	<field name="nir" class="java.lang.String">
+		<fieldDescription><![CDATA[nir]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="555" height="20" backcolor="#FDF6C5" uuid="9250af43-5311-4f22-badd-8a4d5fd19bcc"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="143" height="20" uuid="68c5356f-2488-48f2-8876-eabebd34ab53"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jnsPenggunaanTanah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="0" width="81" height="20" uuid="42ff9420-60df-4cc0-99ae-9959dbb3c3a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{luas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="224" y="0" width="95" height="20" uuid="0f6b3eaf-6d95-4596-ac29-b0a4a2c2ec14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="319" y="0" width="109" height="20" uuid="592f163e-987a-45a6-a0cb-706915477b5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nilPerM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="428" y="0" width="121" height="20" uuid="659418b0-7b1c-42c0-a5df-b721f934a384"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nilTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilDetil" pageWidth="510" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="191add87-db9e-43df-a8b0-b4407da5340b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="master" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="luas" class="java.lang.String">
+		<fieldDescription><![CDATA[luas]]></fieldDescription>
+	</field>
+	<field name="nilaiKeseluruhan" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiKeseluruhan]]></fieldDescription>
+	</field>
+	<field name="nilaiPerM2" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiPerM2]]></fieldDescription>
+	</field>
+	<field name="peruntukan" class="java.lang.String">
+		<fieldDescription><![CDATA[peruntukan]]></fieldDescription>
+	</field>
+	<field name="class_1" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="luas_1" class="java.lang.String">
+		<fieldDescription><![CDATA[luas]]></fieldDescription>
+	</field>
+	<field name="nilaiKeseluruhan_1" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiKeseluruhan]]></fieldDescription>
+	</field>
+	<field name="nilaiPerM2_1" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiPerM2]]></fieldDescription>
+	</field>
+	<field name="peruntukan_1" class="java.lang.String">
+		<fieldDescription><![CDATA[peruntukan]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="510" height="29" backcolor="#FDF6C5" uuid="ec495afd-83f5-4b08-bb6d-dbd94b37948e"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="9" width="100" height="20" uuid="623a17ce-11ba-4510-a467-a0ac84a2d7c2"/>
+				<textFieldExpression><![CDATA[$F{peruntukan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="9" width="113" height="20" uuid="d9fa079d-69dc-4fe2-9864-8e8cd77e4253"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{luas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="224" y="9" width="41" height="20" uuid="b658f818-4c3e-49c8-8f1d-dbed08cc6662"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[x]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="265" y="9" width="95" height="20" uuid="a51fadcf-383d-4202-b461-e2c4f36ecb8e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nilaiPerM2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="9" width="25" height="20" uuid="b4400634-1cb8-422f-8e33-ab6a92400d62"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="385" y="9" width="125" height="20" uuid="f0a0f9f9-920e-4cf2-ba76-4e28b42f3a19"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nilaiKeseluruhan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

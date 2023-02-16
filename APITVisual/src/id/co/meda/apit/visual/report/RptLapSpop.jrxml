@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RptLapSpop" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e3bb308a-3e3a-4b82-a55d-814047889f5e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id/co/meda/apit/visual/report/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="alamatDinas" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatDinas]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="dinasDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[dinasDaerah]]></fieldDescription>
+	</field>
+	<field name="namaPemDaerah" class="java.lang.String">
+		<fieldDescription><![CDATA[namaPemDaerah]]></fieldDescription>
+	</field>
+	<field name="arrSpop" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrSpop]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="78" y="57" width="429" height="20" uuid="f7b73317-fc89-47fb-88e8-51f0746ded9d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamatDinas}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="77" width="555" height="1" uuid="5bdc227a-4a74-4cdc-a52b-1d86ed6918f5"/>
+			</line>
+			<textField>
+				<reportElement x="78" y="10" width="429" height="26" uuid="168f9d35-c3c0-433f-9524-9670502afea8"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaPemDaerah}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="12" y="10" width="55" height="66" uuid="33598403-6dab-4c0f-b8f1-3bd5577fc445"/>
+				<imageExpression><![CDATA["id/co/meda/apit/visual/resource/Lambang_Kota_Batam.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="77" y="37" width="430" height="20" uuid="5b436524-ac56-4058-973f-8d21077fa430"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dinasDaerah}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="306" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="5" width="555" height="204" uuid="c2615b98-2230-436c-8d99-9f892c8446c2"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{arrSpop})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subRptLapSpop.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

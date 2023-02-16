@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ba95e145-7575-4899-b03c-a42570232048">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="alamatBandara" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatBandara]]></fieldDescription>
+	</field>
+	<field name="arrBngPTBandara" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrBngPTBandara]]></fieldDescription>
+	</field>
+	<field name="arrLspopBandara" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrLspopBandara]]></fieldDescription>
+	</field>
+	<field name="arrPenilBngKhusus" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrPenilBngKhusus]]></fieldDescription>
+	</field>
+	<field name="arrPenilTanah" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrPenilTanah]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="namaBandara" class="java.lang.String">
+		<fieldDescription><![CDATA[namaBandara]]></fieldDescription>
+	</field>
+	<field name="nop" class="java.lang.String">
+		<fieldDescription><![CDATA[nop]]></fieldDescription>
+	</field>
+	<field name="ringkasBandara" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[ringkasBandara]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[tahun]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="290" y="34" width="100" height="20" uuid="bdf64582-1ee2-4ad8-978c-948c1971790a"/>
+				<text><![CDATA[TES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="198" y="56" width="100" height="20" uuid="8b3ceb33-5bd7-46ae-ad10-efb45054920a"/>
+				<textFieldExpression><![CDATA[$F{namaBandara}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

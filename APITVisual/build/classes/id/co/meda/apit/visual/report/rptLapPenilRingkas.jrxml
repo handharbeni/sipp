@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilDetil" pageWidth="510" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="191add87-db9e-43df-a8b0-b4407da5340b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bngKe" class="java.lang.String">
+		<fieldDescription><![CDATA[bngKe]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="jmlLtBng" class="java.lang.String">
+		<fieldDescription><![CDATA[jmlLtBng]]></fieldDescription>
+	</field>
+	<field name="jpb" class="java.lang.String">
+		<fieldDescription><![CDATA[jpb]]></fieldDescription>
+	</field>
+	<field name="luasBng" class="java.lang.String">
+		<fieldDescription><![CDATA[luasBng]]></fieldDescription>
+	</field>
+	<field name="nilBng" class="java.lang.String">
+		<fieldDescription><![CDATA[nilBng]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="15" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="509" height="15" backcolor="#10A1DE" uuid="955818c7-77d9-416d-9659-6aadea67ef7f"/>
+				<graphicElement>
+					<pen lineColor="#10A1DE"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="0" width="41" height="15" forecolor="#FFFFFF" uuid="55e13960-316a-4e9b-8e7f-41ece5c24ace"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Bng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="0" width="157" height="15" forecolor="#FFFFFF" uuid="89d3a3a7-6091-4fab-ac2d-1a9162f15c75"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[JPB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="0" width="76" height="15" forecolor="#FFFFFF" uuid="5c735f81-61fe-4cc1-a971-6d7e6d149056"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Luas Bng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="282" y="0" width="58" height="15" forecolor="#FFFFFF" uuid="9a1c7f4d-e23a-407c-8861-625c4d92da4b"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jml Lt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="158" height="15" forecolor="#FFFFFF" uuid="1adec30e-0f7b-4b51-abc7-0deec32506bd"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nilai Bangunan (Rp)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="509" height="18" backcolor="#FDF6C5" uuid="ec495afd-83f5-4b08-bb6d-dbd94b37948e"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="3" y="0" width="41" height="15" uuid="170657b9-304d-424d-ba40-2d26694434ec"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bngKe}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="0" width="158" height="15" uuid="dbb89e70-e32b-4dfd-b248-c86f2a5463e0"/>
+				<textFieldExpression><![CDATA[$F{jpb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="0" width="76" height="15" uuid="eec77a5e-ca88-420e-b235-5173b04d9a2e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{luasBng}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="0" width="58" height="15" uuid="0e96d549-9dbe-4294-b844-ab623914be23"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{jmlLtBng}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="158" height="15" uuid="dad46f7b-a79b-4d67-8e32-df60127dfb32"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nilBng}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

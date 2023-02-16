@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilDetil" pageWidth="510" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="191add87-db9e-43df-a8b0-b4407da5340b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="luasItem" class="java.lang.String">
+		<fieldDescription><![CDATA[luasItem]]></fieldDescription>
+	</field>
+	<field name="namaItem" class="java.lang.String">
+		<fieldDescription><![CDATA[namaItem]]></fieldDescription>
+	</field>
+	<field name="namaKomponen" class="java.lang.String">
+		<fieldDescription><![CDATA[namaKomponen]]></fieldDescription>
+	</field>
+	<field name="nilaiKomponen" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiKomponen]]></fieldDescription>
+	</field>
+	<field name="nilaiTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiTotal]]></fieldDescription>
+	</field>
+	<field name="satuanItem" class="java.lang.String">
+		<fieldDescription><![CDATA[satuanItem]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-1" width="509" height="20" backcolor="#FDF6C5" uuid="ec495afd-83f5-4b08-bb6d-dbd94b37948e"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="11" y="0" width="153" height="20" uuid="6c0a117e-a1bb-4851-b0e9-2480cc455a2c"/>
+				<textFieldExpression><![CDATA[$F{namaItem}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="71" height="20" uuid="c423faa5-1785-434e-b818-87f08555a764"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{luasItem}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="35" height="20" uuid="df9aa979-2afa-42fa-8d9d-962a43a02635"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{satuanItem}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="270" y="0" width="15" height="20" uuid="9e4e2f5e-a74b-4c09-b9a7-534ab870f4d3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[x]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="285" y="0" width="80" height="20" uuid="5d6ee326-17a0-4784-b8ed-14dd330fb521"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nilaiKomponen}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="366" y="0" width="14" height="20" uuid="b4d7b580-b34c-4eec-a6b0-a21a24931af6"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="0" width="112" height="20" uuid="68911b52-3f4f-4945-b139-691910c769e0"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nilaiTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

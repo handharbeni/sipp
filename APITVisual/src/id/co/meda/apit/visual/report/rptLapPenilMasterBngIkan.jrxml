@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilMaster" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="50" rightMargin="30" topMargin="30" bottomMargin="30" uuid="a3008e54-7b82-4eb0-a003-fa2d81dc5f7e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="373"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id/co/meda/apit/visual/report/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="acSentral" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[acSentral]]></fieldDescription>
+	</field>
+	<field name="alamatOp" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatOp]]></fieldDescription>
+	</field>
+	<field name="bngKe" class="java.lang.String">
+		<fieldDescription><![CDATA[bngKe]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="eskalator" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[eskalator]]></fieldDescription>
+	</field>
+	<field name="fasilitasTdkSusut" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[fasilitasTdkSusut]]></fieldDescription>
+	</field>
+	<field name="genset" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[genset]]></fieldDescription>
+	</field>
+	<field name="jmlLtBase" class="java.lang.String">
+		<fieldDescription><![CDATA[jmlLtBase]]></fieldDescription>
+	</field>
+	<field name="jmlLtBng" class="java.lang.String">
+		<fieldDescription><![CDATA[jmlLtBng]]></fieldDescription>
+	</field>
+	<field name="jpb" class="java.lang.String">
+		<fieldDescription><![CDATA[jpb]]></fieldDescription>
+	</field>
+	<field name="kabupaten" class="java.lang.String">
+		<fieldDescription><![CDATA[kabupaten]]></fieldDescription>
+	</field>
+	<field name="kelurahanOp" class="java.lang.String">
+		<fieldDescription><![CDATA[kelurahanOp]]></fieldDescription>
+	</field>
+	<field name="kolamRenang" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[kolamRenang]]></fieldDescription>
+	</field>
+	<field name="kompAtap" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[kompAtap]]></fieldDescription>
+	</field>
+	<field name="kompLangit" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[kompLangit]]></fieldDescription>
+	</field>
+	<field name="kompLantai" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[kompLantai]]></fieldDescription>
+	</field>
+	<field name="kompUtama" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[kompUtama]]></fieldDescription>
+	</field>
+	<field name="lapanganTenis" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[lapanganTenis]]></fieldDescription>
+	</field>
+	<field name="lift" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[lift]]></fieldDescription>
+	</field>
+	<field name="luasBase" class="java.lang.String">
+		<fieldDescription><![CDATA[luasBase]]></fieldDescription>
+	</field>
+	<field name="luasBng" class="java.lang.String">
+		<fieldDescription><![CDATA[luasBng]]></fieldDescription>
+	</field>
+	<field name="matDinDal" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[matDinDal]]></fieldDescription>
+	</field>
+	<field name="matDinLuar" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[matDinLuar]]></fieldDescription>
+	</field>
+	<field name="namaWp" class="java.lang.String">
+		<fieldDescription><![CDATA[namaWp]]></fieldDescription>
+	</field>
+	<field name="nilBng" class="java.lang.String">
+		<fieldDescription><![CDATA[nilBng]]></fieldDescription>
+	</field>
+	<field name="nilFasTdkSusut" class="java.lang.String">
+		<fieldDescription><![CDATA[nilFasTdkSusut]]></fieldDescription>
+	</field>
+	<field name="nilPenyusutan" class="java.lang.String">
+		<fieldDescription><![CDATA[nilPenyusutan]]></fieldDescription>
+	</field>
+	<field name="nilSblmSusut" class="java.lang.String">
+		<fieldDescription><![CDATA[nilSblmSusut]]></fieldDescription>
+	</field>
+	<field name="nilStlhSusut" class="java.lang.String">
+		<fieldDescription><![CDATA[nilStlhSusut]]></fieldDescription>
+	</field>
+	<field name="nop" class="java.lang.String">
+		<fieldDescription><![CDATA[nop]]></fieldDescription>
+	</field>
+	<field name="pabx" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[pabx]]></fieldDescription>
+	</field>
+	<field name="pagar" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[pagar]]></fieldDescription>
+	</field>
+	<field name="pelDinDal" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[pelDinDal]]></fieldDescription>
+	</field>
+	<field name="pelDinLuar" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[pelDinLuar]]></fieldDescription>
+	</field>
+	<field name="penangkalPetir" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[penangkalPetir]]></fieldDescription>
+	</field>
+	<field name="perkerasan" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[perkerasan]]></fieldDescription>
+	</field>
+	<field name="persenSusut" class="java.lang.String">
+		<fieldDescription><![CDATA[persenSusut]]></fieldDescription>
+	</field>
+	<field name="proteksiApi" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[proteksiApi]]></fieldDescription>
+	</field>
+	<field name="reservoir" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[reservoir]]></fieldDescription>
+	</field>
+	<field name="sistemAirPanas" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[sistemAirPanas]]></fieldDescription>
+	</field>
+	<field name="sistemLimbah" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[sistemLimbah]]></fieldDescription>
+	</field>
+	<field name="sistemTataSuara" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[sistemTataSuara]]></fieldDescription>
+	</field>
+	<field name="sumurArtesis" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[sumurArtesis]]></fieldDescription>
+	</field>
+	<field name="televisi" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[televisi]]></fieldDescription>
+	</field>
+	<field name="thnPenilaian" class="java.lang.String">
+		<fieldDescription><![CDATA[thnPenilaian]]></fieldDescription>
+	</field>
+	<field name="totKompFasilitas" class="java.lang.String">
+		<fieldDescription><![CDATA[totKompFasilitas]]></fieldDescription>
+	</field>
+	<field name="totKompMaterial" class="java.lang.String">
+		<fieldDescription><![CDATA[totKompMaterial]]></fieldDescription>
+	</field>
+	<field name="totKompUtama" class="java.lang.String">
+		<fieldDescription><![CDATA[totKompUtama]]></fieldDescription>
+	</field>
+	<field name="videoInterkom" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[videoInterkom]]></fieldDescription>
+	</field>
+	<field name="ringkasan" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[ringkasan]]></fieldDescription>
+	</field>
+	<field name="nilBngAll" class="java.lang.String">
+		<fieldDescription><![CDATA[nilBngAll]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="751" splitType="Stretch">
+			<rectangle>
+				<reportElement x="60" y="223" width="402" height="179" backcolor="#CCFFFF" uuid="a9c076f2-44d1-44a0-884a-8375c8fcc907"/>
+				<graphicElement>
+					<pen lineColor="#0059FA"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="60" y="171" width="403" height="35" forecolor="#FFFFFF" backcolor="#107BFF" uuid="e9c5044a-f5fe-4f4a-bfc8-f1ddab7598e5"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENILAIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="243" width="118" height="23" uuid="2fc1302d-ec4b-41d2-8315-dab629b14b55"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tahun Penilaian]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="203" y="244" width="257" height="20" uuid="bc789c2c-faff-4e68-8cf7-46f0406b1672"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thnPenilaian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="203" y="267" width="257" height="20" uuid="a0d20811-ab33-456d-8bdf-ef938e945f9c"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nop}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="65" y="266" width="62" height="23" uuid="fafb39df-c372-4f80-9cea-1f45aeb9b3ff"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="243" width="8" height="23" uuid="7c5288fd-36c8-49e4-aab8-89e72a4f2f85"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="266" width="8" height="23" uuid="6f8fd545-0885-4d17-9a59-7e81c7bf71de"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="203" y="289" width="257" height="20" uuid="6df8543f-b4a2-459a-b52a-8a10117848c1"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaWp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="185" y="288" width="8" height="23" uuid="3acc76e5-6a15-4df6-b7bc-dc8b0e0d16ff"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="288" width="101" height="23" uuid="893f5798-97dc-4256-a9b3-211604ca014d"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nama WP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="310" width="101" height="23" uuid="89e95ea9-ec4f-45c9-8f03-5c7086fe3a90"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Alamat OP]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="203" y="311" width="257" height="20" uuid="78aa5abe-6a6e-404f-a91b-5bc274c2b1e0"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamatOp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="185" y="310" width="8" height="23" uuid="a2ad5117-9674-4617-bec5-6569d60612f8"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="332" width="8" height="23" uuid="df13c639-1e5a-4660-a837-5365cef188ee"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="332" width="101" height="23" uuid="7b87f147-9e74-4e3a-b360-cfa074d62924"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kelurahan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="203" y="333" width="257" height="20" uuid="394b5106-69b2-4781-ab55-2b173fba3f3c"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelurahanOp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="203" y="355" width="257" height="20" uuid="601a4172-c176-4874-a557-faafb9b0f2c3"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kabupaten}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="65" y="354" width="101" height="23" uuid="bb3ca8b0-5def-490f-86f5-a4dfec7fbce8"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kabupaten]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="354" width="8" height="23" uuid="03d83052-6469-447c-9987-00a9d9c5983d"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="411" width="100" height="1" uuid="084654a2-835f-4950-bc14-894dec33b5e1"/>
+			</break>
+			<image>
+				<reportElement x="6" y="5" width="57" height="61" uuid="2cda3d82-9c9a-4df4-afd9-4350c93b63cf"/>
+				<imageExpression><![CDATA["id\\co\\meda\\apit\\visual\\resource\\Logo_Pemkab-Buleleng-Bali.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="2" y="70" width="513" height="1" uuid="b56fd526-6518-4f1c-808b-830b94216415"/>
+			</line>
+			<staticText>
+				<reportElement x="77" y="5" width="438" height="22" uuid="6f82a3fe-5c87-434c-a9f5-26f76b41e3b4"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH KABUPATEN BULELENG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="27" width="438" height="19" uuid="f528f519-91ab-4f03-8e58-a85f517dfd7b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DINAS PENDAPATAN DAERAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="47" width="438" height="19" uuid="925d1235-e13f-4c27-b3b3-34bd7857c29d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jl. Pahlawan No. 1 Singaraja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="431" width="303" height="19" uuid="a47c2a1e-0056-4b62-a3b9-804f607788b4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RINGKASAN HASIL PENILAIAN]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="3" y="470" width="513" height="45" uuid="93cda8c5-3aaa-4cd5-aa8d-04f525d881d4"/>
+				<subreport>
+					<reportElement x="0" y="4" width="512" height="35" uuid="051d5aa9-dcc5-4cd2-9131-006e24b5199b"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{ringkasan})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilRingkas.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="4" y="530" width="162" height="19" uuid="be6452c9-b36b-409b-b5fe-eea40379d7f9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Nilai Bangunan :    Rp. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="166" y="530" width="196" height="19" uuid="15c901c5-b95f-43eb-9498-ce0db90826dd"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilBngAll}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="6" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="5" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="711" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="3" width="510" height="65" backcolor="#10A1DE" uuid="5c2663b2-9737-4eb3-b893-2127d3da1d3c"/>
+				<graphicElement>
+					<pen lineColor="#10A1DE"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="6" width="96" height="19" forecolor="#FFFFFF" uuid="9c6d9292-c789-4671-9d1d-d2aa90ea651e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="6" width="10" height="19" forecolor="#FFFFFF" uuid="aa053c0f-0609-47ce-9c15-99897477ad9b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="118" y="5" width="43" height="20" forecolor="#FFFFFF" uuid="38ffe97f-d8ba-4243-be5a-b2c301a2cbb7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bngKe}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="331" y="6" width="10" height="19" forecolor="#FFFFFF" uuid="e7a91232-a6e0-418c-9708-10f19f0a574e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="6" width="45" height="19" forecolor="#FFFFFF" uuid="48f1d794-712e-48e6-b161-e7acfedde3f0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JPB]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="341" y="5" width="161" height="20" forecolor="#FFFFFF" uuid="6d23ec55-05bd-447e-820b-fb19df040957"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jpb}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="108" y="25" width="10" height="19" forecolor="#FFFFFF" uuid="97f81987-6f0a-4bb5-b057-c0185d51c87a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="118" y="24" width="65" height="20" forecolor="#FFFFFF" uuid="5d3cd330-484c-424d-995f-199efefba3ca"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{luasBng}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="25" width="96" height="19" forecolor="#FFFFFF" uuid="513098dc-da30-4829-b5ec-67f7dcd3a5bf"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Luas Bangunan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="45" width="10" height="19" forecolor="#FFFFFF" uuid="941dcba8-6075-4b9e-9f7c-d1dfc9562b82"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="118" y="44" width="65" height="20" forecolor="#FFFFFF" uuid="44fcd803-0cd2-4bf8-8885-bc3fad2decd5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{luasBase}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="45" width="96" height="19" forecolor="#FFFFFF" uuid="5c82f5e0-b48c-417f-bad2-362af238669a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Luas Basement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="25" width="10" height="19" forecolor="#FFFFFF" uuid="9d1cd5b9-05f8-4d8f-9e3d-86091b9d9bc6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="341" y="24" width="34" height="20" forecolor="#FFFFFF" uuid="0799c946-9efd-4686-a37b-b66f04374532"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jmlLtBng}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="235" y="25" width="96" height="19" forecolor="#FFFFFF" uuid="2aca6b6a-5408-4c23-82d0-71f78a0eb985"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jml Lt Bangunan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="341" y="44" width="34" height="20" forecolor="#FFFFFF" uuid="160a4e36-7667-430a-9319-fe380a36f8d7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jmlLtBase}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="331" y="45" width="10" height="19" forecolor="#FFFFFF" uuid="7a4570e6-0b2e-465f-b58e-dc763a217be9"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="45" width="96" height="19" forecolor="#FFFFFF" uuid="4c48a475-c08a-4b42-9819-45ca8cec7a50"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jml Lt Basement]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="1" y="80" width="513" height="38" uuid="a9dd1016-2fc5-4204-930c-d273c414e2bf"/>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="2" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="f415b1b7-b224-4492-8719-e6841997644a"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  I. BIAYA KOMPONEN UTAMA]]></text>
+				</staticText>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="a48f1279-5a7e-4ee4-b141-ba3c12185056"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{kompUtama})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="2" y="125" width="513" height="53" uuid="d2aa4284-a928-40cf-b1a4-13e22c320c98"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="34" width="512" height="15" uuid="2175a5bd-5cf2-4c65-9b9d-3cc524429e94"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{matDinDal})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="d9bbee1b-b2b3-4eb5-90d0-74e5bc6cd8e5"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  II. BIAYA KOMPONEN MATERIAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="16" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="14fed947-31fa-43e9-9254-24be334e7a80"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ A. Material Dinding Dalam]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="1" y="182" width="513" height="39" uuid="39c29cd5-45df-4e8c-ba12-c306ca72dd5c"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="dad9aa58-5b50-4097-98cf-6efe1389e834"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{matDinLuar})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="2db192df-59cb-41d8-a351-4ba42ccfa56e"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ B. Material Dinding Luar]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="435" width="513" height="61" uuid="35208f65-6c5e-431f-a114-404b1ef8394f"/>
+				<staticText>
+					<reportElement x="7" y="21" width="227" height="20" uuid="eb63a6b7-3e43-4bb4-9012-23e6e8394d93"/>
+					<textElement>
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Fasilitas Pendukung (dari formulir fasilitas)]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="324" y="20" width="169" height="20" uuid="5c663f35-dd65-41b8-ad8f-3848b4cf87d9"/>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totKompFasilitas}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="7" y="40" width="227" height="20" uuid="18d8d0d0-d4b6-478f-8210-ade8ff320ed3"/>
+					<textElement>
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[NILAI SEBELUM DISUSUTKAN]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="324" y="41" width="169" height="20" uuid="f63a7597-a583-49de-985f-02dd6a5ee059"/>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nilSblmSusut}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="6726d9a2-6672-461e-9e8a-1938d7b74b21"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  III. BIAYA KOMPONEN FASILITAS]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="500" width="510" height="61" uuid="5e1db207-c257-4318-abc3-8e9013f908c1"/>
+				<staticText>
+					<reportElement x="3" y="21" width="227" height="20" uuid="f7576de6-fdc7-4a2b-be4c-2d32aa8d1fdc"/>
+					<textElement>
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[NILAI PENYUSUTAN]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="324" y="20" width="169" height="20" uuid="6330aafb-195d-49f4-a439-b7864c6e7edf"/>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nilPenyusutan}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="3" y="40" width="227" height="20" uuid="dc09b091-fe7c-4385-8aba-00fc3ab8f075"/>
+					<textElement>
+						<font size="10" isBold="false"/>
+					</textElement>
+					<text><![CDATA[NILAI SETELAH DISUSUTKAN]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="324" y="41" width="169" height="20" uuid="c19dad59-dcee-4ee0-bd09-867441bc03b8"/>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nilStlhSusut}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="230" y="20" width="94" height="20" uuid="dd5fb471-c1cc-4e17-be18-d7d9df545091"/>
+					<textElement textAlignment="Center">
+						<font size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{persenSusut}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="2" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="90877373-26a1-48bc-ac8f-c421b65df548"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  IV. PENYUSUTAN]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="566" width="513" height="38" uuid="d292e29f-7b9c-4732-afaa-2ebbdf5d1745"/>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="2" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="96573d1c-ad12-45a5-a3da-45f95af8266e"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[  V. FASILITAS TIDAK PERLU DISUSUTKAN]]></text>
+				</staticText>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="19" width="512" height="15" uuid="794bb137-17bb-457d-88ca-ac6bd4e68ae4"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{fasilitasTdkSusut})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="614" width="510" height="24" uuid="3e43c808-ec16-4cc6-8ad2-b90dd2b16c80"/>
+				<staticText>
+					<reportElement x="3" y="0" width="273" height="20" uuid="08b20593-d6cc-483b-bc41-323b53a31505"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[NILAI BANGUNAN]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="324" y="0" width="169" height="20" uuid="a67cf804-be22-4e13-bb3e-d14f483a00ef"/>
+					<textElement textAlignment="Right">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nilBng}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="224" width="513" height="39" uuid="219ca5b5-6e28-4bde-99ab-b467032dfa85"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="86e6506f-8b18-4b28-bdb6-eb7914541937"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pelDinDal})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="f5f20af6-9947-425c-b8f7-d017d7df1a94"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ C. Pelapis Dinding Dalam]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="263" width="513" height="39" uuid="4792d1f4-94e8-495f-afe5-6c8c802e1c78"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="f167e102-f20d-47c6-93cd-ece49a3a4bb2"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pelDinLuar})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="89e7fc9c-ff3e-4065-b12c-58588dc14bd4"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ D. Pelapis Dinding Luar]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="305" width="513" height="39" uuid="297d616f-4fbd-4571-a356-f1f13b377fcf"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="2f6c6aea-6a1a-4ed4-8332-b364d3565aa7"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{kompLangit})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="b773c10b-652c-4b0e-8f36-a023fe7b3a83"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ E. Langit-langit]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="348" width="513" height="39" uuid="f0e2706a-576d-4e05-82a9-e1b452e72979"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="fc756ea0-bf50-4541-88df-ba4a9e7283bd"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{kompAtap})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="fd215e32-8e9a-4c69-9a15-3601ed26935d"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ F. Penutup Atap]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="390" width="513" height="39" uuid="55ec1678-9a11-429a-953a-881883960ad6"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="2a62262f-2813-4e38-935d-51c6e243d5ec"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{kompLantai})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#FEA00A" uuid="b2bb2c23-2018-4304-a3ea-1bfcad2fdaa8"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ G. Penutup Lantai]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="745">
+			<break>
+				<reportElement x="0" y="-10" width="100" height="1" uuid="e743eaeb-4089-421b-8732-21c79ace3b9a"/>
+			</break>
+			<staticText>
+				<reportElement x="98" y="19" width="10" height="15" uuid="4452f624-1fc4-4d8a-a72f-0c7f09569ae0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="19" width="96" height="15" uuid="b98de316-d4c1-44b0-afe4-c6d730a0cf56"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Bangunan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="19" width="43" height="16" uuid="3c548162-fadf-488b-9fc7-2b0d2e0197c4"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bngKe}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" x="4" y="719" width="510" height="24" uuid="385cf09b-a93e-44ec-bcbf-33275e624764"/>
+				<staticText>
+					<reportElement x="3" y="2" width="273" height="20" uuid="73fa6afa-5374-4657-9d7e-69828302d7ee"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TOTAL NILAI FASILITAS]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="329" y="2" width="169" height="20" uuid="73931f08-5a51-4b6b-9952-511d62ed5d0e"/>
+					<textElement textAlignment="Right">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{totKompFasilitas}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="798cb1cf-32a3-4901-84fd-12d4caedfb10"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERHITUNGAN FASILITAS BANGUNAN]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="Float" x="0" y="37" width="513" height="39" uuid="ea8c1244-b218-4cff-b61e-c9e34f2d115d"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="456327f5-90a3-4838-8fac-f4cb3412c507"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{acSentral})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="73a8a11b-8294-4648-9186-b3e6b5dcad7e"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ I. AC Sentral]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="76" width="513" height="39" uuid="9b2b456d-8314-40f9-8b65-841a5630bcc7"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="d6508e4a-b61a-4e35-94af-0ddfed95dc06"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{lift})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="3821bd8e-6906-45a3-9e8d-65cb4010d1c8"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ II. Lift]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="116" width="513" height="39" uuid="6b068a49-4472-49e7-9dff-58df990e706c"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="cc71f6cc-e0ef-4fe6-b056-593f235ebece"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{eskalator})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="710bcd0d-2314-49ef-8e64-894f3e119efd"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ III. Eskalator]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="156" width="513" height="39" uuid="3da3c471-5331-45f9-ac28-45d9a362ba6e"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="8490eeb3-00e4-4419-8572-dce927ba878f"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pagar})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="8dd86040-dc3c-43a8-9254-c32d4e76e779"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ IV. Pagar]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="196" width="513" height="39" uuid="4f7bedd7-a964-4262-b09b-8a57fbcabed6"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="df4adba7-42a7-47be-9a25-4f4592adbda4"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{proteksiApi})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="1512ab51-cc5f-4611-aee7-ad3da35d2223"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ V. Proteksi Api]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="236" width="513" height="39" uuid="f684e8c5-b2b0-4bbf-8b8b-eb38fc0a3824"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="dcb5dca2-6256-47ea-b7aa-d797857b002b"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pabx})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="6376683d-6827-4c30-bdb1-debf3238a8ea"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ VI. PABX]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="276" width="513" height="39" uuid="741a2bd6-66de-41a8-86a1-f15d9f9fa26d"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="7bb76e76-a41f-4508-8672-026ef080dc15"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{sumurArtesis})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="53cc51e6-ceb9-4329-8907-b33b4afcb4c1"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ VII. Sumur Artesis]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="316" width="513" height="39" uuid="7034e41f-8ba4-4fdf-981f-0972e85162ca"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="bbd17097-1f25-444b-a529-2514c33cc8cc"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{sistemAirPanas})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="43106da7-87c7-446b-9a1c-a26ea568719a"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ VIII. Sistem Air Panas]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="356" width="513" height="39" uuid="0c30aec1-9d3e-4070-abde-896d5b4474f0"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="18146734-3b6f-4ef9-bfaa-0f4366de025b"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{penangkalPetir})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="3eb99df5-398e-48c1-88f8-64f9fc7b8906"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ IX. Penangkal Petir]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="396" width="513" height="39" uuid="cf4cb418-8e9b-4e69-af50-542f479bd855"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="4e21f8e8-3106-44ac-82ee-4b51d4cfb984"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{sistemLimbah})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="0b4d529a-41b8-45f5-992e-55cd1518fb73"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ X. Sistem Pengolahan Limbah]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="436" width="513" height="39" uuid="20c1cba9-1b05-4912-8f4c-827f1a6a6ba1"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="af1d6903-c65c-4f01-90e9-38717e7cb395"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{sistemTataSuara})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="d52e1a31-9e7d-48d5-a97b-0bcee17d278c"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XI. Sistem Tata Suara]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="476" width="513" height="39" uuid="035e15e4-ccf4-419f-9ef5-d84532192525"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="ba24c9d3-ff19-4058-bb99-7376343d1a9e"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{videoInterkom})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="65bbf0ea-3d46-4db2-9093-4fe179d37af3"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XII. Video Interkom]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="516" width="513" height="39" uuid="51bab9b4-c6f9-4cbe-bba3-006aabccd1c3"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="bab232a5-30d9-4f67-88c3-48d6c8cfad4d"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{reservoir})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="6d9c6244-4e92-49e4-9b34-1f3520ff758f"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XIII. Reservoir]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="556" width="513" height="39" uuid="adb2cb92-e0b7-4376-8c2f-18c8bce58563"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="354045c4-87a1-4ccf-8c1d-f76cdfdd7c2e"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{televisi})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="8765f144-4531-4fa4-ba95-d9e621677b80"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XIV. Televisi]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="596" width="513" height="39" uuid="8288734e-01b5-4452-9a02-4aaa483f48eb"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="b1c03792-5101-426c-bce8-a8d563cb9e17"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{kolamRenang})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="1809b0b3-64b4-4ec6-a962-edfa0a01b938"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XV. Kolam Renang]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="636" width="513" height="39" uuid="1c1b5fbe-6f62-44c6-9b5e-4d5af418e7cc"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="698b2ddb-ddd4-47d1-9b67-f273011e55f8"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{perkerasan})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="af26f424-c68c-424d-acb3-ef994d2a218a"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XVI. Perkerasan]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="676" width="513" height="39" uuid="edb2605f-0e0a-4766-94ab-4507a5459ec8"/>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="20" width="512" height="15" uuid="89d039ff-67ef-42b3-9933-67da1022954f"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{perkerasan})]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapPenilDetil.jasper"]]></subreportExpression>
+				</subreport>
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="3" width="510" height="14" forecolor="#FFFFFF" backcolor="#10A1DE" uuid="e6f4d4c2-2162-4f31-9122-8182a3ee00f7"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ XVII. Lapangan Tenis]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="475" y="0" width="37" height="20" uuid="4690a60b-479f-4e19-8ad4-fd09ed3a1007"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["dari "+($V{PAGE_NUMBER}-1)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="0" width="63" height="20" uuid="5def4e82-44bd-465a-af7d-2639b989eb1e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Hal "+($V{PAGE_NUMBER}-1)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="0" width="100" height="20" uuid="5e465d93-02fe-4a07-a6eb-610408dfb5b8"/>
+				<text><![CDATA[APIT versi 1.0]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

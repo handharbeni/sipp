@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="50" rightMargin="30" topMargin="30" bottomMargin="30" uuid="967702fd-08de-48e6-965a-e1e2efc41c12">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["id\\co\\meda\\apit\\visual\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="alamatOP" class="java.lang.String">
+		<fieldDescription><![CDATA[alamatOP]]></fieldDescription>
+	</field>
+	<field name="arrIkan" class="java.util.ArrayList">
+		<fieldDescription><![CDATA[arrIkan]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="namaWp" class="java.lang.String">
+		<fieldDescription><![CDATA[namaWp]]></fieldDescription>
+	</field>
+	<field name="njop" class="java.lang.String">
+		<fieldDescription><![CDATA[njop]]></fieldDescription>
+	</field>
+	<field name="noIzin" class="java.lang.String">
+		<fieldDescription><![CDATA[noIzin]]></fieldDescription>
+	</field>
+	<field name="nop" class="java.lang.String">
+		<fieldDescription><![CDATA[nop]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[tahun]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="108" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="2" width="55" height="66" uuid="821ab1b0-4c75-4634-bfde-9cfe07d9ec94"/>
+				<imageExpression><![CDATA["id\\co\\meda\\apit\\visual\\resource\\Logo_Pemkab-Buleleng-Bali.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="69" y="10" width="243" height="20" uuid="97a5a10e-8916-486e-8434-047317147e92"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH KABUPATEN BULELENG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="26" width="243" height="20" uuid="01d26cea-e860-40f5-8509-64d166339d70"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dinas Pendapatan Daerah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="43" width="243" height="20" uuid="c89ee234-f19c-4be3-9569-b58261b728f3"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Pahlawan No. 1 Singaraja Bali]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="67" width="500" height="1" uuid="cb66f07d-134d-4a59-8bfb-fd322f857abc"/>
+			</line>
+			<staticText>
+				<reportElement x="98" y="86" width="303" height="20" uuid="c7656de9-5cc2-44df-b4cd-44c9411f0142"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENILAIAN OBJEK PAJAK PERIKANAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="328" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="163" width="101" height="20" forecolor="#000000" uuid="e9edf19d-43a6-49e6-8660-90459204f3c3"/>
+				<text><![CDATA[Tahun Penilaian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="163" width="6" height="20" forecolor="#000000" uuid="b7f419d3-7a95-4040-a16e-8f5ea97e39d6"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="20" width="515" height="17" forecolor="#0099CC" backcolor="#0099CC" uuid="cccc2023-8b17-44cb-bb2e-01cac47ae4e4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="6" y="21" width="100" height="20" forecolor="#FFFFFF" uuid="a410d71f-9186-45c8-a688-46d8f1db73bd"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UMUM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="48" width="102" height="20" uuid="75e94876-c20a-4684-9b8e-94a85ea63e88"/>
+				<text><![CDATA[NOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="48" width="6" height="20" forecolor="#000000" uuid="4edae42b-f530-460d-bb4e-80e9c11edae1"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="106" width="103" height="20" uuid="1a3d9188-75bf-4c98-909c-897702b28fc7"/>
+				<text><![CDATA[Nama Wajib Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="106" width="6" height="20" forecolor="#000000" uuid="2762aa89-7371-40a7-9b1b-22f04385fea1"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="86" width="102" height="20" uuid="e53402ba-2069-41d5-a531-1068136bf73b"/>
+				<text><![CDATA[Alamat Objek Pajak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="86" width="6" height="20" forecolor="#000000" uuid="4055c609-ad3b-49d4-b583-b64fd2c03bb6"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="141" width="515" height="17" forecolor="#0099CC" backcolor="#0099CC" uuid="c000a6c1-0d7d-4ad8-9de4-c537a5c3e722"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="143" width="117" height="20" forecolor="#FFFFFF" uuid="1c82a9be-7cec-4530-9eb6-ed530534047f"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENILAIAN TANAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="66" width="102" height="20" uuid="42d9c84d-2f69-4e87-84d6-af47a3a9586f"/>
+				<text><![CDATA[No. Izin Perikanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="66" width="6" height="20" forecolor="#000000" uuid="c1a7e7a0-c65b-4d52-b011-9b014ca6f584"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="122" y="107" width="210" height="20" uuid="ac09e881-21a8-4477-9a01-1fc867eada2a"/>
+				<textFieldExpression><![CDATA[$F{namaWp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="87" width="210" height="20" uuid="8d10daf4-dfb0-467e-a497-d7eb608242ef"/>
+				<textFieldExpression><![CDATA[$F{alamatOP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="47" width="210" height="20" uuid="f7c6ecdf-58bb-4863-9a9d-588c9529698e"/>
+				<textFieldExpression><![CDATA[$F{nop}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="67" width="210" height="20" uuid="0c6e6f83-7311-47c3-94a9-5b17e177aea2"/>
+				<textFieldExpression><![CDATA[$F{noIzin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="163" width="100" height="20" uuid="45cd3b68-703c-43f3-a418-6dc265f0c941"/>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="194" width="114" height="20" uuid="2f96d5b5-1699-4385-a78b-80ae5b5d3f40"/>
+				<text><![CDATA[Peruntukan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="194" width="100" height="20" uuid="5432299b-78d7-4466-982a-4a0e4d4dfc69"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Luas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="194" width="150" height="20" uuid="d2113fd4-4fcd-4e4a-89b7-c3b9fdd12eaf"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Nilai Per M2 (Rp)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="194" width="143" height="20" uuid="19604371-43dd-4f9e-ad92-011b8ce6d173"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Nilai Keseluruhan (Rp)]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="8" y="233" width="507" height="40" uuid="5ce353b8-55eb-425c-98be-97bc1ff72ede"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{arrIkan})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rptLapTanahIkanPeruntukan.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement positionType="Float" x="8" y="285" width="507" height="1" uuid="94812003-4a38-4c67-8e99-0a93a4f6887c"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="332" y="296" width="61" height="20" uuid="46e0109d-a0bf-45de-a9f9-91fe6e6af9a7"/>
+				<text><![CDATA[NJOP Tanah]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="401" y="296" width="114" height="20" forecolor="#009900" uuid="1c543868-8dc5-4ad2-85f7-3be441bcc657"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{njop}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

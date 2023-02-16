@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilDetil" pageWidth="510" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="191add87-db9e-43df-a8b0-b4407da5340b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="master" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="njopBangunan" class="java.lang.String">
+		<fieldDescription><![CDATA[njopBangunan]]></fieldDescription>
+	</field>
+	<field name="njopPerikanan" class="java.lang.String">
+		<fieldDescription><![CDATA[njopPerikanan]]></fieldDescription>
+	</field>
+	<field name="njopTanah" class="java.lang.String">
+		<fieldDescription><![CDATA[njopTanah]]></fieldDescription>
+	</field>
+	<field name="totalNjop" class="java.lang.String">
+		<fieldDescription><![CDATA[totalNjop]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="155" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="509" height="82" backcolor="#FDF6C5" uuid="ec495afd-83f5-4b08-bb6d-dbd94b37948e"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="11" width="324" height="20" uuid="2ec5c674-3576-4064-b214-e10abe82c1f7"/>
+				<text><![CDATA[NJOP TANAH (Rp)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="31" width="324" height="20" uuid="47cda231-1f18-4776-885e-e97c6915829a"/>
+				<text><![CDATA[NJOP BANGUNAN (Rp)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="51" width="324" height="20" uuid="b195824b-08a4-48b6-a893-800703d9eb9c"/>
+				<text><![CDATA[NJOP WILAYAH PERIKANAN (Rp)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="109" width="324" height="20" uuid="1d9bfef7-b000-416e-81b4-ab0f332f22e2"/>
+				<text><![CDATA[NJOP WILAYAH PERIKANAN + NJOP TANAH + NJOP BANGUNAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="11" width="17" height="20" uuid="318a80af-ab42-44ea-bb04-51c1935d5d41"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="31" width="17" height="20" uuid="beb6eda4-d543-4c37-b03f-e8f65de13503"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="51" width="17" height="20" uuid="0c92f3ab-d269-413c-b65b-433e69e3b73a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="109" width="17" height="20" uuid="115e831b-4a0d-4d7e-a32d-218a41064c96"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="95" width="484" height="1" uuid="f0b65134-8771-411c-9fe0-d2a2019cd9b8"/>
+			</line>
+			<textField>
+				<reportElement x="352" y="31" width="143" height="20" uuid="98fbb732-8dfa-41da-bb75-7858a90ee139"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{njopBangunan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="11" width="143" height="20" uuid="b68d2602-68a8-4b1c-90ac-783f8500b7bf"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{njopTanah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="51" width="143" height="20" uuid="92d2e271-2648-40b9-8652-578f43b3f5d1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{njopPerikanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="109" width="143" height="20" forecolor="#009900" uuid="aef6a6a1-cc7a-40af-9ce3-2dddcc80eee5"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalNjop}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

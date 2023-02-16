@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptLapPenilDetil" pageWidth="510" pageHeight="842" columnWidth="510" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="191add87-db9e-43df-a8b0-b4407da5340b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="master" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="kelasBangunan" class="java.lang.String">
+		<fieldDescription><![CDATA[kelasBangunan]]></fieldDescription>
+	</field>
+	<field name="luasTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[luasTotal]]></fieldDescription>
+	</field>
+	<field name="nilaiPerM2" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiPerM2]]></fieldDescription>
+	</field>
+	<field name="nilaiTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaiTotal]]></fieldDescription>
+	</field>
+	<field name="njop" class="java.lang.String">
+		<fieldDescription><![CDATA[njop]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="216" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="509" height="175" backcolor="#FDF6C5" uuid="ec495afd-83f5-4b08-bb6d-dbd94b37948e"/>
+				<graphicElement>
+					<pen lineColor="#FCF5C4"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="13" y="11" width="79" height="20" uuid="43ce5e3c-3ab3-4e2c-8078-dc4b738511e1"/>
+				<text><![CDATA[Luas Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="43" width="79" height="20" uuid="2791f5a0-0eec-4455-bf9a-c8f5e979712f"/>
+				<text><![CDATA[Nilai Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="76" width="79" height="20" uuid="1c2db148-ef50-4748-88ff-ae19b6eb4d14"/>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="110" width="79" height="20" uuid="720487e1-8946-4fad-9415-49f6914e696e"/>
+				<text><![CDATA[Nilai Per M2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="142" width="79" height="20" uuid="0e573270-e56a-45e3-9ff3-c8579097f779"/>
+				<text><![CDATA[NJOP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="142" width="16" height="20" uuid="78a0aa0c-2d71-403f-abbd-bec889b95901"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="110" width="16" height="20" uuid="931dae60-dd7d-4f8b-a776-bb654d1dfe33"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="76" width="16" height="20" uuid="ff38af6e-a5ad-4b28-9b33-a84aaf8bb5a8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="43" width="16" height="20" uuid="3fd70c42-7ad7-4ae3-a41e-18fc4838b49f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="11" width="16" height="20" uuid="1f5b2eef-c2f6-4ce8-b02f-7fdd96f34c3e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="11" width="125" height="20" uuid="9547ced0-503e-4759-99bf-da2d7e672524"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{luasTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="43" width="125" height="20" uuid="e6011a25-89bf-4a81-877a-91e672df7682"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nilaiTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="76" width="125" height="20" uuid="a7de9b44-e546-4d90-b2c9-850cf648fc11"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kelasBangunan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="110" width="125" height="20" uuid="14204736-837f-45ef-9f8f-c92605672374"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nilaiPerM2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="142" width="125" height="20" uuid="2b4b42ad-af7e-45d7-992f-cbd1b9a37dba"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{njop}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="329" y="142" width="16" height="20" uuid="35f877fd-08ca-4212-b58f-b85c06535975"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[=]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="142" width="109" height="20" uuid="e360afa1-877c-473b-97b3-14e34aaf3a7b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nilaiPerM2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="142" width="96" height="20" uuid="e7f898fc-e174-4208-855d-0403e20672ed"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{luasTotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="217" y="142" width="16" height="20" uuid="67323900-fe5a-42e9-bd97-5af79c3a025e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[x]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="186" width="147" height="20" uuid="b7fbed87-4e4e-4df5-83b0-680f0a7589bf"/>
+				<text><![CDATA[NJOP Bangunan Perikanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="186" width="16" height="20" uuid="353a90ac-2748-4ad6-9b9f-32e1e7914079"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="176" y="186" width="140" height="20" forecolor="#339900" uuid="507b15fa-ef3a-4252-9826-de4e89d47559"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{njop}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="188eb583-abe0-4fd9-9cda-8f2ac7b4f7fe">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="atap" class="java.lang.String">
+		<fieldDescription><![CDATA[atap]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="langitLangit" class="java.lang.String">
+		<fieldDescription><![CDATA[langitLangit]]></fieldDescription>
+	</field>
+	<field name="matDindingDalam" class="java.lang.String">
+		<fieldDescription><![CDATA[matDindingDalam]]></fieldDescription>
+	</field>
+	<field name="matDindingLuar" class="java.lang.String">
+		<fieldDescription><![CDATA[matDindingLuar]]></fieldDescription>
+	</field>
+	<field name="pelDindingDalam" class="java.lang.String">
+		<fieldDescription><![CDATA[pelDindingDalam]]></fieldDescription>
+	</field>
+	<field name="pelDindingLuar" class="java.lang.String">
+		<fieldDescription><![CDATA[pelDindingLuar]]></fieldDescription>
+	</field>
+	<field name="penutupLantai" class="java.lang.String">
+		<fieldDescription><![CDATA[penutupLantai]]></fieldDescription>
+	</field>
+	<field name="bngKe" class="java.lang.String">
+		<fieldDescription><![CDATA[bngKe]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="244" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="25" width="555" height="25" forecolor="#000000" backcolor="#0099FF" uuid="def409d1-a9ef-4455-bbea-cac816e5c496"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="25" width="283" height="25" forecolor="#FFFFFF" uuid="2d5e4835-29eb-452c-b3be-e3ec6d9f6077"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Komponen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="25" width="272" height="25" forecolor="#FFFFFF" uuid="d0fbe56c-fbfc-48bc-899c-9c1eb0490517"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Condotel]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="50" width="555" height="175" backcolor="#FFCC66" uuid="895f12e8-03d9-475c-b4d2-749744f0aeb5"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="50" width="283" height="25" forecolor="#FFFFFF" uuid="01daf87f-4180-42b8-badd-0fd533c16057"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Material Dinding Dalam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="75" width="283" height="25" forecolor="#FFFFFF" uuid="cccd82ca-0083-43d7-981c-5884567a42fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Material Dinding Luar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="283" height="25" forecolor="#FFFFFF" uuid="0eec968a-4aab-4eb9-ab24-1c1d5993cb6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Pelapis Dinding Dalam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="125" width="283" height="25" forecolor="#FFFFFF" uuid="3243725a-11df-4d88-ab2e-c7f4bcd97a77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Pelapis Dinding Luar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="283" height="25" forecolor="#FFFFFF" uuid="93e9c7a6-2eab-4101-b743-3392ddb527c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Langit-langit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="175" width="283" height="25" forecolor="#FFFFFF" uuid="c935e298-c8b2-4e87-ba5d-1614517b79ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Atap]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="283" height="25" forecolor="#FFFFFF" uuid="09c0108f-3f36-4811-9eb1-f6afb3fb1032"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Penutup Lantai]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="283" y="50" width="272" height="25" forecolor="#FFFFFF" uuid="6fc32f53-aaca-4fd5-8cf0-db52fc6b88c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{matDindingDalam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="75" width="272" height="25" forecolor="#FFFFFF" uuid="b5d706b9-1d7b-4527-bfa7-04932a73d63d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{matDindingLuar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="100" width="272" height="25" forecolor="#FFFFFF" uuid="4eb0c5fc-c848-49a4-ac25-e1ac0a49ae9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelDindingDalam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="125" width="272" height="25" forecolor="#FFFFFF" uuid="33f53006-9dac-4d15-9f51-c8be701b909f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pelDindingLuar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="150" width="272" height="25" forecolor="#FFFFFF" uuid="e4b3c3bd-3557-4728-aee5-15ca934fa970"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{langitLangit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="175" width="272" height="25" forecolor="#FFFFFF" uuid="5040ed7c-78dd-433e-910f-cb01cf790f06"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{atap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="283" y="200" width="272" height="25" forecolor="#FFFFFF" uuid="9ea8d04c-d537-40be-a9e7-d5469c381ffa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{penutupLantai}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="4" width="108" height="15" uuid="dd2b5697-4324-4ef7-9ed5-d29b56e788bc"/>
+				<textElement>
+					<font fontName="Footlight MT Light" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bangunan ke :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="108" y="4" width="100" height="15" uuid="7036e6dd-62e4-4301-ad1a-763788412c46"/>
+				<textElement>
+					<font fontName="Footlight MT Light" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bngKe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
